@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { signUpService } from "../Services/user.service";
+import { signUpService, loginService } from "../Services/user.service";
 
 export const signUpController = async (req: Request, res: Response) => {
   const { email, password, avatar } = req.body;
@@ -9,6 +9,30 @@ export const signUpController = async (req: Request, res: Response) => {
     const signUp = await signUpService(email, password, avatar);
 
     res.send(signUp);
+  } catch (error) {
+    if (error instanceof Error) {
+      res.status(500).send({
+        message: error.message,
+        promise: false,
+        expectedError: true
+      });
+    } else {
+      res.status(500).send({
+        message: error,
+        promise: false,
+        expectedError: false
+      });
+    }
+  }
+};
+
+export const loginController = async (req: Request, res: Response) => {
+  const { email, password } = req.body;
+
+  try {
+    const login = await loginService(email, password);
+
+    res.send(login);
   } catch (error) {
     if (error instanceof Error) {
       res.status(500).send({
