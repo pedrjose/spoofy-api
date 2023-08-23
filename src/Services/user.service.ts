@@ -1,6 +1,8 @@
 import * as bcrypt from "bcrypt";
 import { PartialSession } from "../Types/user.types";
 import { encodeSession } from "../Middlewares/EncodeMiddleware";
+import { TAlgorithm, decode } from "jwt-simple";
+import { Session } from "../Interfaces/Session";
 
 import {
   passwordPattern,
@@ -68,4 +70,31 @@ export const loginService = async (email: string, password: string) => {
     email: user.email,
     promise: true
   };
+};
+
+export const authService = async (token: any) => {
+  if (!token) throw new Error("Session has expired. Log in again!");
+
+  const tokenDivider = token.split(" ");
+
+  if (tokenDivider.length !== 2)
+    throw new Error("Not authorization to do this!");
+
+  const [schema, jwt] = tokenDivider;
+
+  if (schema !== `${process.env.AUTH_SCHEMA}`)
+    throw new Error("Not authorization to do this!");
+
+  const algorithm: TAlgorithm = "HS512";
+
+  const result: Session = await decode(
+    jwt,
+    `${process.env.SECRET_KEY}`,
+    false,
+    algorithm
+  );
+
+  if (!result) throw new Error("Session has expired. Log in again!");
+
+  return { message: "Session is valid", promise: true };
 };
