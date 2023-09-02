@@ -1,5 +1,3 @@
-import { corsAuth } from "../Middlewares/CorsModdleware";
-
 import { Router } from "express";
 const router = Router();
 
@@ -9,8 +7,8 @@ import {
   authController
 } from "../Controllers/user.controller";
 
-router.post("/sign-up", corsAuth, signUpController);
-router.post("/login", corsAuth, loginController);
-router.get("/auth", corsAuth, authController);
+router.post("/sign-up", signUpController);
+router.post("/login", loginController);
+router.get("/auth", authController);
 
 export default router;
