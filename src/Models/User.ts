@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { IUser } from "../Interfaces/User";
+import { IPlaylist } from "../Interfaces/User";
 import { Schema } from "mongoose";
 
 const UserSchema: Schema = new Schema({
@@ -17,6 +18,9 @@ const UserSchema: Schema = new Schema({
   avatar: {
     type: String,
     required: true
+  },
+  saveLyrics: {
+    type: Array<IPlaylist>
   }
 });
 
