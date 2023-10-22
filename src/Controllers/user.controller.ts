@@ -1,9 +1,11 @@
 import { Request, Response } from "express";
+import { IPlaylist, ILyric } from "../Interfaces/User";
 
 import {
   signUpService,
   loginService,
-  authService
+  authService,
+  createPlaylistService
 } from "../Services/user.service";
 
 export const signUpController = async (req: Request, res: Response) => {
@@ -61,6 +63,33 @@ export const authController = async (req: Request, res: Response) => {
     const session = await authService(authorization);
 
     res.send(session);
+  } catch (error) {
+    if (error instanceof Error) {
+      res.status(500).send({
+        message: error.message,
+        promise: false,
+        expectedError: true
+      });
+    } else {
+      res.status(500).send({
+        message: error,
+        promise: false,
+        expectedError: false
+      });
+    }
+  }
+};
+
+export const createPlaylistController = async (req: Request, res: Response) => {
+  try {
+    const { id, playlistName } = req.body;
+
+    const newPlaylist: IPlaylist = {
+      playlistName: playlistName,
+      playlistLyrics: []
+    };
+
+    const createPlaylist = await createPlaylistService(id, newPlaylist);
   } catch (error) {
     if (error instanceof Error) {
       res.status(500).send({

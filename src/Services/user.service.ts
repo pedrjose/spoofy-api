@@ -3,6 +3,7 @@ import { PartialSession } from "../Types/user.types";
 import { encodeSession } from "../Middlewares/EncodeMiddleware";
 import { TAlgorithm, decode } from "jwt-simple";
 import { Session } from "../Interfaces/Session";
+import { IPlaylist } from "../Interfaces/User";
 
 import {
   passwordPattern,
@@ -11,7 +12,8 @@ import {
 
 import {
   signUpRepository,
-  findUserByEmailRepository
+  findUserByEmailRepository,
+  createPlaylistRepository
 } from "../Repositories/user.repository";
 
 export const signUpService = async (
@@ -97,4 +99,16 @@ export const authService = async (token: any) => {
   if (!result) throw new Error("Session has expired. Log in again!");
 
   return { message: "Session is valid", promise: true };
+};
+
+export const createPlaylistService = async (
+  id: string,
+  newPlaylist: IPlaylist
+) => {
+  if (!newPlaylist.playlistName)
+    throw new Error("Not possible create a playlist. Try again!");
+
+  createPlaylistRepository(id, newPlaylist);
+
+  return { promise: true, message: "Playlist created with successfully!" };
 };
