@@ -19,7 +19,7 @@ const UserSchema: Schema = new Schema({
     type: String,
     required: true
   },
-  saveLyrics: {
+  myPlaylists: {
     type: Array<IPlaylist>
   }
 });
