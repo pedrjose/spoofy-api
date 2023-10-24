@@ -20,7 +20,8 @@ const UserSchema: Schema = new Schema({
     required: true
   },
   myPlaylists: {
-    type: Array<IPlaylist>
+    type: Array<IPlaylist>,
+    required: true
   }
 });
 

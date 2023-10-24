@@ -1,17 +1,23 @@
 import User from "../Models/User";
 import { IUser, IPlaylist } from "../Interfaces/User";
+import { ObjectId } from "mongodb";
 
 export const signUpRepository = (user: IUser) => User.create(user);
 
 export const findUserByEmailRepository = (email: string) =>
   User.findOne({ email: email }).select("+password");
 
+export const findUserByIdRepository = (id: ObjectId) => User.findById(id);
+
 export const createPlaylistRepository = (
-  id: string,
+  id: ObjectId,
   newPlaylist: IPlaylist
 ) => {
-  User.findOneAndUpdate(
+  return User.findOneAndUpdate(
     { _id: id },
-    { $push: { myPlaylist: { newPlaylist } } }
+    { $push: { myPlaylists: newPlaylist } }
   );
-}; 
+};
+
+export const updateUserByIdRepository = (id: ObjectId, user: IUser) =>
+  User.findByIdAndUpdate(id, user, { new: true });

@@ -3,7 +3,8 @@ import { PartialSession } from "../Types/user.types";
 import { encodeSession } from "../Middlewares/EncodeMiddleware";
 import { TAlgorithm, decode } from "jwt-simple";
 import { Session } from "../Interfaces/Session";
-import { IPlaylist } from "../Interfaces/User";
+import { ILyric, IPlaylist, IUser } from "../Interfaces/User";
+import { ObjectId } from "mongodb";
 
 import {
   passwordPattern,
@@ -13,7 +14,9 @@ import {
 import {
   signUpRepository,
   findUserByEmailRepository,
-  createPlaylistRepository
+  createPlaylistRepository,
+  findUserByIdRepository,
+  updateUserByIdRepository
 } from "../Repositories/user.repository";
 
 export const signUpService = async (
@@ -33,7 +36,9 @@ export const signUpService = async (
   const hashPassword = await encryptPassword(password);
   password = hashPassword;
 
-  await signUpRepository({ email, password, avatar });
+  const myPlaylists: IPlaylist[] = [];
+
+  await signUpRepository({ email, password, avatar, myPlaylists });
 
   return {
     message: "User created successfully!",
@@ -102,13 +107,125 @@ export const authService = async (token: any) => {
 };
 
 export const createPlaylistService = async (
-  id: string,
-  newPlaylist: IPlaylist
+  id: ObjectId,
+  playlistName: string
 ) => {
-  if (!newPlaylist.playlistName)
-    throw new Error("Not possible create a playlist. Try again!");
+  if (!playlistName) throw new Error("Set a name for your new playlist!");
 
-  createPlaylistRepository(id, newPlaylist);
+  const newPlaylistId = Math.floor(Date.now() * Math.random()).toString(36);
 
-  return { promise: true, message: "Playlist created with successfully!" };
+  const newPlaylist: IPlaylist = {
+    playlistId: newPlaylistId,
+    playlistName: playlistName,
+    playlistLyrics: []
+  };
+
+  const insertNewPlaylist = await createPlaylistRepository(id, newPlaylist);
+
+  if (!insertNewPlaylist) throw new Error("Create playlist error. Try again!");
+
+  return { message: "Playlist created with successfully!" };
+};
+
+export const removePlaylistService = async (
+  id: ObjectId,
+  playlistId: string
+) => {
+  if (!playlistId)
+    throw new Error("Set a ID for playlist that you want remove!");
+
+  const findUser = await findUserByIdRepository(id);
+
+  if (!findUser) throw new Error("Delete playlist error. Try again!");
+
+  for (let i = 0; i < findUser.myPlaylists.length; i++) {
+    if (findUser.myPlaylists[i].playlistId === playlistId) {
+      findUser.myPlaylists.splice(i, i);
+
+      await updateUserByIdRepository(id, findUser);
+
+      return { message: "Playlist removed!" };
+    }
+  }
+
+  throw new Error("Playlist not found. Check the ID!");
+};
+
+export const addLyricService = async (
+  id: ObjectId,
+  playlistId: string,
+  lyric: ILyric
+) => {
+  const findUser = await findUserByIdRepository(id);
+
+  if (!findUser) throw new Error("Add lyric at playlist error. Try again!");
+
+  for (let i = 0; i < findUser.myPlaylists.length; i++) {
+    if (findUser.myPlaylists[i].playlistId === playlistId) {
+      findUser.myPlaylists[i].playlistLyrics.push(lyric);
+
+      await updateUserByIdRepository(id, findUser);
+
+      return { message: "Lyric added with successfully!" };
+    }
+  }
+
+  throw new Error("Playlist not found. Check the ID!");
+};
+
+export const removeLyricService = async (
+  id: ObjectId,
+  playlistId: string,
+  musicName: string
+) => {
+  const findUser = await findUserByIdRepository(id);
+
+  if (!findUser) throw new Error("Add lyric at playlist error. Try again!");
+
+  for (let i = 0; i < findUser.myPlaylists.length; i++) {
+    if (findUser.myPlaylists[i].playlistId === playlistId) {
+      for (let j = 0; j < findUser.myPlaylists[i].playlistLyrics.length; j++) {
+        if (findUser.myPlaylists[i].playlistLyrics[j].musicName === musicName) {
+          findUser.myPlaylists[i].playlistLyrics.splice(j, j);
+        }
+      }
+
+      await updateUserByIdRepository(id, findUser);
+
+      return { message: "Lyric removed with successfully!" };
+    }
+  }
+
+  throw new Error("Playlist not found. Check the ID!");
+};
+
+export const findPlaylistByUserService = async (id: ObjectId) => {
+  const findUser = await findUserByIdRepository(id);
+
+  if (!findUser) throw new Error("Add lyric at playlist error. Try again!");
+
+  return {
+    message: "User finded successfully!",
+    userplaylists: findUser.myPlaylists
+  };
+};
+
+export const findPlaylistByIdService = async (
+  id: ObjectId,
+  playlistId: string
+) => {
+  const findUser = await findUserByIdRepository(id);
+
+  if (!findUser) throw new Error("Add lyric at playlist error. Try again!");
+
+  for (let i = 0; i < findUser.myPlaylists.length; i++) {
+    if (findUser.myPlaylists[i].playlistId === playlistId) {
+      return {
+        message: "Playlist finded sucessfully!",
+        playlist: findUser.myPlaylists[i]
+      };
+    }
+  }
+
+  return { message: "Playlist not found. Check the ID!" };
 };

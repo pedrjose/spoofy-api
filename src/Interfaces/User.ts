@@ -1,7 +1,8 @@
 export interface IUser {
   email: string;
-  password: string;
   avatar: string;
+  password: string;
+  myPlaylists: IPlaylist[];
 }
 
 export interface ILogin {
@@ -18,6 +19,7 @@ export interface ILyric {
 }
 
 export interface IPlaylist {
+  playlistId: string;
   playlistName: string;
   playlistLyrics: ILyric[];
 }

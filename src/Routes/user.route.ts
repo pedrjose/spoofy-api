@@ -5,16 +5,22 @@ import {
   signUpController,
   loginController,
   authController,
-  createPlaylistController
+  createPlaylistController,
+  removePlaylistController,
+  addLyricController,
+  removeLyricController,
+  findPlaylistByUserController,
+  findPlaylistByIdController
 } from "../Controllers/user.controller";
 
 router.post("/sign-up", signUpController);
 router.post("/login", loginController);
 router.get("/auth", authController);
-//
 router.patch("/create-playlist", createPlaylistController);
-router.post("/remove-playlist", authController);
-router.post("/add-lyric", authController);
-router.post("/remove-lyric", authController);
+router.patch("/remove-playlist", removePlaylistController);
+router.patch("/add-lyric", addLyricController);
+router.patch("/remove-lyric", removeLyricController);
+router.get("/find-playlist-by-user", findPlaylistByUserController);
+router.get("/find-playlist-by-id", findPlaylistByIdController);
 
 export default router;
