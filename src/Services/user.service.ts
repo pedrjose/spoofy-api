@@ -33,8 +33,8 @@ export const signUpService = async (
   if (!passwordPattern(password))
     throw new Error("Passwords must have special characters and numeric chars");
 
-  const hashPassword = await encryptPassword(password);
-  password = hashPassword;
+  const encrypt = await encryptPassword(password);
+  password = encrypt.hashPassword.toString();
 
   const myPlaylists: IPlaylist[] = [];
 
