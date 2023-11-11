@@ -1,4 +1,4 @@
-import * as express from "express";
+import express from "express";
 import { connectDatabase } from "./Database/db";
 import * as dotenv from "dotenv";
 dotenv.config();
@@ -17,3 +17,5 @@ connectDatabase();
 app.listen(port, () =>
   console.log(`\nTHE SERVER IS HOSTED ON PORT ${port}...`)
 );
+
+export default app;

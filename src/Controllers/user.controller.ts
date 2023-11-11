@@ -60,17 +60,12 @@ export const loginController = async (req: Request, res: Response) => {
   }
 };
 
-export const authController = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
+export const authController = async (req: Request, res: Response) => {
   const { authorization } = req.headers;
-
   try {
-    await authService(authorization);
+    const auth = await authService(authorization);
 
-    next();
+    res.send(auth);
   } catch (error) {
     if (error instanceof Error) {
       res.status(500).send({

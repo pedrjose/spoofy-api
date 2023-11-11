@@ -3,7 +3,7 @@ import { PartialSession } from "../Types/user.types";
 import { encodeSession } from "../Middlewares/EncodeMiddleware";
 import { TAlgorithm, decode } from "jwt-simple";
 import { Session } from "../Interfaces/Session";
-import { ILyric, IPlaylist, IUser } from "../Interfaces/User";
+import { ILyric, IPlaylist } from "../Interfaces/User";
 import { ObjectId } from "mongodb";
 
 import {
@@ -79,8 +79,10 @@ export const loginService = async (email: string, password: string) => {
   };
 };
 
-export const authService = async (token: any) => {
-  if (!token) throw new Error("Session has expired. Log in again!");
+export const authService = async (initSessionToken: any) => {
+  if (!initSessionToken) throw new Error("Session has expired. Log in again!");
+
+  let token = initSessionToken.toString();
 
   const tokenDivider = token.split(" ");
 
@@ -89,8 +91,7 @@ export const authService = async (token: any) => {
 
   const [schema, jwt] = tokenDivider;
 
-  if (schema !== `${process.env.AUTH_SCHEMA}`)
-    throw new Error("Not authorization to do this!");
+  if (schema !== "Bearer") throw new Error("Not authorization to do this!");
 
   const algorithm: TAlgorithm = "HS512";
 
@@ -101,9 +102,7 @@ export const authService = async (token: any) => {
     algorithm
   );
 
-  if (!result) throw new Error("Session has expired. Log in again!");
-
-  return { message: "Session is valid", promise: true };
+  return { message: "Session is valid", promise: true, sessionData: result };
 };
 
 export const createPlaylistService = async (
