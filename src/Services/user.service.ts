@@ -203,7 +203,7 @@ export const removeLyricService = async (
 export const findPlaylistByUserService = async (id: ObjectId) => {
   const findUser = await findUserByIdRepository(id);
 
-  if (!findUser) throw new Error("Add lyric at playlist error. Try again!");
+  if (!findUser) throw new Error("Playlist not found. Try again!");
 
   return {
     message: "User finded successfully!",
