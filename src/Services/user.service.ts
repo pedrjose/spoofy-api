@@ -3,7 +3,7 @@ import { PartialSession } from "../Types/user.types";
 import { encodeSession } from "../Middlewares/EncodeMiddleware";
 import { TAlgorithm, decode } from "jwt-simple";
 import { Session } from "../Interfaces/Session";
-import { ILyric, IPlaylist, IUser } from "../Interfaces/User";
+import { ILyric, IPlaylist } from "../Interfaces/User";
 import { ObjectId } from "mongodb";
 
 import {
@@ -200,8 +200,9 @@ export const removeLyricService = async (
   throw new Error("Playlist not found. Check the ID!");
 };
 
-export const findPlaylistByUserService = async (id: ObjectId) => {
-  const findUser = await findUserByIdRepository(id);
+export const findPlaylistByUserService = async (id: string) => {
+  const userId = new ObjectId(id);
+  const findUser = await findUserByIdRepository(userId);
 
   if (!findUser) throw new Error("Playlist not found. Try again!");
 
