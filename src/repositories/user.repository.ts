@@ -1,5 +1,5 @@
-import User from "../Models/User";
-import { IUser, IPlaylist } from "../Interfaces/User";
+import User from "../models/User";
+import { IUser, IPlaylist } from "../interfaces/User";
 import { ObjectId } from "mongodb";
 
 export const signUpRepository = (user: IUser) => User.create(user);

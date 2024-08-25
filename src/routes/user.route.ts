@@ -11,7 +11,7 @@ import {
   removeLyricController,
   findPlaylistByUserController,
   findPlaylistByIdController
-} from "../Controllers/user.controller";
+} from "../controllers/user.controller";
 
 router.post("/sign-up", signUpController);
 router.post("/login", loginController);

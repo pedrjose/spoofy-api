@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
-import { IUser } from "../Interfaces/User";
-import { IPlaylist } from "../Interfaces/User";
+import { IUser } from "../interfaces/User";
+import { IPlaylist } from "../interfaces/User";
 import { Schema } from "mongoose";
 
 const UserSchema: Schema = new Schema({

@@ -1,4 +1,4 @@
-import { Session, EncodeResult } from "../Interfaces/Session";
+import { Session, EncodeResult } from "../interfaces/Session";
 
 export type PartialSession = Omit<Session, "issued" | "expires">;
 

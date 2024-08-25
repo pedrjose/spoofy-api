@@ -10,7 +10,7 @@ import {
   removeLyricService,
   findPlaylistByUserService,
   findPlaylistByIdService
-} from "../Services/user.service";
+} from "../services/user.service";
 
 export const signUpController = async (req: Request, res: Response) => {
   const { email, password, avatar } = req.body;

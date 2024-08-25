@@ -1,15 +1,15 @@
 import * as bcrypt from "bcrypt";
-import { PartialSession } from "../Types/user.types";
-import { encodeSession } from "../Middlewares/EncodeMiddleware";
+import { PartialSession } from "../types/user.types";
+import { encodeSession } from "../middlewares/EncodeMiddleware";
 import { TAlgorithm, decode } from "jwt-simple";
-import { Session } from "../Interfaces/Session";
-import { ILyric, IPlaylist } from "../Interfaces/User";
+import { Session } from "../interfaces/Session";
+import { ILyric, IPlaylist } from "../interfaces/User";
 import { ObjectId } from "mongodb";
 
 import {
   passwordPattern,
   encryptPassword
-} from "../Middlewares/PasswordMiddleware";
+} from "../middlewares/PasswordMiddleware";
 
 import {
   signUpRepository,
@@ -17,7 +17,7 @@ import {
   createPlaylistRepository,
   findUserByIdRepository,
   updateUserByIdRepository
-} from "../Repositories/user.repository";
+} from "../repositories/user.repository";
 
 export const signUpService = async (
   email: string,
