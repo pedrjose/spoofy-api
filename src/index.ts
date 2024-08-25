@@ -1,3 +1,6 @@
+import cors, { CorsOptions } from 'cors';
+import helmet from "helmet";
+import cookieParser from "cookie-parser";
 import express from 'express';
 import { connectMongoDB } from "./database/databaseConnection";
 
@@ -12,6 +15,22 @@ import { loadConfigVariables } from "./config";
 
 loadConfigVariables();
 
+const allowedList = [
+  "http://localhost:3000",
+  "http://localhost:8000",
+];
+
+const corsOptions: CorsOptions = {
+  credentials: true,
+  origin: (origin: any, callback: any) => {
+    if (allowedList.includes(origin ?? "") || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
 (async () => {
   try {
     await connectMongoDB();
@@ -20,6 +39,13 @@ loadConfigVariables();
     const app = express();
 
     app.use(express.json());
+    app.use(express.urlencoded({ extended: false }));
+
+    app.use(cookieParser());
+
+    app.use(cors(corsOptions));
+    
+    app.use(helmet());
 
     app.use("/user", corsAuth, userRoute);
 
