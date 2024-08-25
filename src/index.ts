@@ -1,19 +1,30 @@
 import * as express from "express";
-import { connectDatabase } from "./Database/db";
+import { connectDatabase } from "./Database/databaseConnection";
 import * as dotenv from "dotenv";
 dotenv.config();
 
 import { corsAuth } from "./Middlewares/CorsModdleware";
 import userRoute from "./Routes/user.route";
 
-const port = process.env.PORT || 3000;
-const app = express();
+(async () => {
+  try {
+    await connectDatabase();
 
-app.use(express.json());
-app.use("/user", corsAuth, userRoute);
+    const port = process.env.PORT || 3000;
+    const app = express();
 
-connectDatabase();
+    app.use(express.json());
+    app.use("/user", corsAuth, userRoute);
 
-app.listen(port, () =>
-  console.log(`\nTHE SERVER IS HOSTED ON PORT ${port}...`)
-);
+    app.listen(port, () =>
+      console.log(`The Server is Hosted on Port ${port}...`)
+    );
+  } catch (error) {
+    console.log('Failed to start the application:', error);
+  }
+})();
+
+
+
+
+
