@@ -1,8 +1,10 @@
 import cors, { CorsOptions } from 'cors';
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
+import createError from "http-errors";
 import express from 'express';
 import { connectMongoDB } from "./database/databaseConnection";
+import { errorHandler } from "./helpers";
 
 import { corsAuth } from "./middlewares/CorsModdleware";
 import userRoute from "./routes/user.route";
@@ -11,6 +13,7 @@ import httpLogger from "./middlewares/HttpLogger";
 
 import { loadConfigVariables } from "./config";
 import redisClient from './redis/redisConnection';
+import { messages } from './messages';
 
 loadConfigVariables();
 
@@ -51,6 +54,10 @@ const corsOptions: CorsOptions = {
     redisClient.ping();
 
     app.use(httpLogger);
+
+    app.use((_, __, next) => next(createError(404, messages.NOT_FOUND)));
+
+    app.use(errorHandler);
 
     app.listen(port, () =>
       console.log(`The Server is Hosted on Port ${port}...`)
