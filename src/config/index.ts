@@ -8,6 +8,9 @@ export const config = {
     databaseUrl: "mongodb://authusers:123456@mongo:27017/authusers",
     databaseUser: "authusers",
     databasePassword: "123456",
+
+    // redis
+    redisUrl: "redis://alice:foobared@awesome.redis.server:6380",
   };
 
 export const loadConfigVariables = () => {

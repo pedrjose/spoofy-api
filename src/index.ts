@@ -8,10 +8,9 @@ import { corsAuth } from "./middlewares/CorsModdleware";
 import userRoute from "./routes/user.route";
 
 import httpLogger from "./middlewares/HttpLogger";
-import bodyParser from "body-parser"
-
 
 import { loadConfigVariables } from "./config";
+import redisClient from './redis/redisConnection';
 
 loadConfigVariables();
 
@@ -48,6 +47,8 @@ const corsOptions: CorsOptions = {
     app.use(helmet());
 
     app.use("/user", corsAuth, userRoute);
+
+    redisClient.ping();
 
     app.use(httpLogger);
 
