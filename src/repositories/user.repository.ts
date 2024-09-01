@@ -1,4 +1,4 @@
-import User from "../models/User";
+import User from "../database/models/userModel";
 import { IUser, IPlaylist } from "../interfaces/User";
 import { ObjectId } from "mongodb";
 

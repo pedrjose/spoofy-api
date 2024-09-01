@@ -1,5 +1,5 @@
 import * as bcrypt from "bcrypt";
-import { PartialSession } from "../types/user.types";
+import { PartialSession } from "../types/user.type";
 import { encodeSession } from "../middlewares/EncodeMiddleware";
 import { TAlgorithm, decode } from "jwt-simple";
 import { Session } from "../interfaces/Session";

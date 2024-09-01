@@ -1,8 +1,19 @@
-export interface IUser {
+import { UserRoles } from "../types";
+import { ObjectId } from "mongoose";
+
+export interface IUserModel extends Document {
+  name: string;
   email: string;
-  avatar: string;
   password: string;
-  myPlaylists: IPlaylist[];
+  role: UserRoles;
+  photo?: string;
+  myPlaylists: Array<IPlaylist>;
+}
+
+export interface UserTokenModel extends Document {
+  userId: ObjectId;
+  token: string;
+  createdAt: Date;
 }
 
 export interface ILogin {

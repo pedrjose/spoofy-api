@@ -1,5 +1,5 @@
 import { encode, TAlgorithm } from "jwt-simple";
-import { PartialSession } from "../types/user.types";
+import { PartialSession } from "../types/user.type";
 import { Session, EncodeResult } from "../interfaces/Session";
 
 export const encodeSession = async (
