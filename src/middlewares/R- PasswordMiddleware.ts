@@ -1,3 +1,4 @@
+/*
 import * as bcrypt from "bcrypt";
 
 export const encryptPassword = async (password: string) => {
@@ -16,3 +17,4 @@ export const passwordPattern = (password: string) => {
 
   return false;
 };
+*/

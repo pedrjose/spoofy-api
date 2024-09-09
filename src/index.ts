@@ -6,14 +6,15 @@ import express from 'express';
 import { connectMongoDB } from "./database/databaseConnection";
 import { errorHandler } from "./helpers";
 
-import { corsAuth } from "./middlewares/CorsModdleware";
-import userRoute from "./routes/user.route";
+import passport from "./middlewares/passport";
 
 import httpLogger from "./middlewares/HttpLogger";
 
 import { loadConfigVariables } from "./config";
 import redisClient from './redis/redisConnection';
 import { messages } from './messages';
+import routes from "./routes";
+
 
 loadConfigVariables();
 
@@ -49,7 +50,9 @@ const corsOptions: CorsOptions = {
     
     app.use(helmet());
 
-    app.use("/user", corsAuth, userRoute);
+    routes(app)
+
+    app.use(passport);
 
     redisClient.ping();
 

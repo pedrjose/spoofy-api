@@ -1,27 +1,36 @@
 import { Request, Response } from "express";
+import createHttpError from "http-errors";
 
-import { signUpService } from "../../services/user.service";
+import { hashPassword, logger, sendError, sendResponse } from "../../helpers";
+import { IPlaylist } from "../../interfaces/User";
+import { messages } from "../../messages";
+import { userService } from "../../services/userService";
+import { asyncWrapper } from "../utils/asyncWrapper";
 
-export const signUpController = async (req: Request, res: Response) => {
-    const { email, password, avatar } = req.body;
-  
-    try {
-      const signUp = await signUpService(email, password, avatar);
-  
-      res.send(signUp);
-    } catch (error) {
-      if (error instanceof Error) {
-        res.status(500).send({
-          message: error.message,
-          promise: false,
-          expectedError: true
-        });
-      } else {
-        res.status(500).send({
-          message: error,
-          promise: false,
-          expectedError: false
-        });
-      }
+const registerController = asyncWrapper(async (req: Request, res: Response) => {
+  try {
+    const { name, email, password } = req.body;
+
+    const existingUser = await userService.findUserByEmail(email);
+
+    if (existingUser) {
+      logger.error(messages.EXISTING_EMAIL);
+      return sendError(res, createHttpError(409, messages.EXISTING_EMAIL));
     }
-  };
+
+    const hash = await hashPassword(password);
+
+    const myPlaylists: IPlaylist[] = [];
+
+    await userService.create(name, email, hash, "user", myPlaylists);
+
+    return sendResponse(res, messages.ACCOUNT_CREATED, 201);
+  } catch (err) {
+    const error = err as Error;
+
+    logger.error(error.message);
+    return sendError(res, error);
+  }
+});
+
+export default registerController;

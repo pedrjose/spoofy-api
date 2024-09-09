@@ -1,3 +1,4 @@
+/*
 import * as bcrypt from "bcrypt";
 import { PartialSession } from "../types/user.type";
 import { encodeSession } from "../middlewares/EncodeMiddleware";
@@ -234,3 +235,4 @@ export const findPlaylistByIdService = async (
 
   return { message: "Playlist not found. Check the ID!" };
 };
+*/

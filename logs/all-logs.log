@@ -1,0 +1,205 @@
+[2024-09-07 12:46:41.920 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:46:44.008 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:46:44.064 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:46:44.169 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:46:44.322 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:46:46.583 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:46:46.837 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:46.653 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:48.718 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:48.773 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:48.878 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:49.036 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:51.280 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:51.536 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:53.833 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:54.287 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:56.395 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:56.869 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:48:58.936 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:01.479 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:04.014 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:06.565 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:09.086 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:11.665 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:14.219 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:16.657 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 12:49:16.657 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 12:49:16.781 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:18.812 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:21.376 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:23.895 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:26.429 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:28.974 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:31.522 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:34.049 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:36.614 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:39.152 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:41.682 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:44.227 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND awesome.redis.server[39m
+[2024-09-07 12:49:46.660 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 12:59:06.996 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-07 12:59:16.286 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 12:59:20.336 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 12:59:26.920 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 12:59:42.703 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 12:59:46.785 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 12:59:50.862 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 12:59:54.923 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:06.766 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:10.874 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:24.491 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:28.546 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:32.618 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:36.689 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:40.808 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:44.874 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:48.976 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:53.042 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:00:53.114 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:00:53.116 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:00:58.396 PM] [31merror[39m: 	[31mRedis Client Error Connection timeout[39m
+[2024-09-07 01:01:03.464 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:07.560 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:18.216 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:22.285 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:26.368 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:30.526 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:38.698 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:42.795 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:46.856 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:50.933 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:55.002 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:01:59.226 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:03.379 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:07.300 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:02:07.301 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:02:07.451 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:12.806 PM] [31merror[39m: 	[31mRedis Client Error Connection timeout[39m
+[2024-09-07 01:02:17.837 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:21.910 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:25.989 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:30.058 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:34.157 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-07 01:02:37.303 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:06:10.529 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-07 01:06:22.078 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-07 01:06:52.082 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:06:52.082 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 01:07:22.082 PM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-07 02:37:15.312 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 08:35:33.599 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:33.603 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:33.658 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:33.762 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:33.916 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:34.122 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:34.373 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:34.677 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:35.030 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:35.432 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:35.886 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:36.392 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:35:36.895 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-08 08:36:33.147 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 08:37:03.151 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 08:37:03.151 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 08:37:33.158 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 09:20:30.521 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:21:00.541 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 09:21:00.541 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 09:21:30.538 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 09:24:25.959 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:24:32.517 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:24:38.408 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:25:08.437 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 09:25:08.438 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 09:25:39.687 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:26:09.689 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-08 09:26:09.689 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-08 09:26:39.690 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-08 09:26:54.876 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:27:24.878 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-08 09:27:24.879 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-08 09:27:54.887 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-08 09:31:31.892 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 10:47:12.986 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 10:47:43.006 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 10:47:43.007 AM] [31merror[39m: 	[31mgetaddrinfo ENOTFOUND mongo[39m
+[2024-09-08 10:59:30.933 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 10:59:30.972 AM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-08 10:59:30.972 AM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-08 10:59:30.988 AM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-08 11:10:45.866 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 11:10:45.898 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 04:53:46.708 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 04:53:46.739 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 04:57:34.799 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 04:57:34.835 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 04:57:35.032 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 04:57:42.528 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 04:57:42.568 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 04:59:49.898 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 04:59:49.933 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 04:59:57.773 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 04:59:57.811 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:00:11.813 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:00:11.841 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:00:23.251 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:00:23.283 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:01:34.786 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:01:34.816 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:01:43.695 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:01:43.727 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:04:20.178 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:04:20.205 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:04:53.400 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:04:53.434 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:09:08.345 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:09:08.373 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:09:15.401 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:09:15.431 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:09:39.778 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:09:39.809 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:09:46.013 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:09:46.041 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:09:53.089 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:09:53.117 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:12:06.325 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:12:06.356 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:15:25.432 PM] [32minfo[39m: 	[32mGET /api/v1/ 404 85 - 3.092 ms[39m
+[2024-09-08 05:15:38.761 PM] [32minfo[39m: 	[32mGET /api/v1/hello 404 85 - 0.855 ms[39m
+[2024-09-08 05:15:46.106 PM] [32minfo[39m: 	[32mGET /api/v1/test 404 85 - 0.347 ms[39m
+[2024-09-08 05:23:47.139 PM] [32minfo[39m: 	[32mGET /api/v1/test 404 85 - 0.367 ms[39m
+[2024-09-08 05:23:50.041 PM] [32minfo[39m: 	[32mGET /api/v1/ 404 85 - 0.391 ms[39m
+[2024-09-08 05:23:59.750 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:23:59.791 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:30:01.534 PM] [32minfo[39m: 	[32mGET /api/v1/register 404 85 - 2.457 ms[39m
+[2024-09-08 05:30:18.440 PM] [32minfo[39m: 	[32mGET /api/v1 404 85 - 0.485 ms[39m
+[2024-09-08 05:30:21.506 PM] [32minfo[39m: 	[32mGET /api/v1/ 404 85 - 0.604 ms[39m
+[2024-09-08 05:33:36.713 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:33:36.744 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:39:12.925 PM] [32minfo[39m: 	[32mGET /api/v1/ 404 85 - 2.818 ms[39m
+[2024-09-08 05:39:20.345 PM] [32minfo[39m: 	[32mGET /api/v1/hello 404 85 - 0.642 ms[39m
+[2024-09-08 05:39:24.876 PM] [32minfo[39m: 	[32mGET /api/v1/test 404 85 - 0.366 ms[39m
+[2024-09-08 05:39:30.695 PM] [32minfo[39m: 	[32mGET /api/v1/register 404 85 - 0.636 ms[39m
+[2024-09-08 05:39:55.134 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:39:55.164 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:40:23.123 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:40:23.153 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:40:25.279 PM] [32minfo[39m: 	[32mGET /api/v1/test 404 85 - 2.825 ms[39m
+[2024-09-08 05:40:26.950 PM] [32minfo[39m: 	[32mGET /api/v1/test 404 85 - 0.272 ms[39m
+[2024-09-08 05:42:56.642 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:42:56.674 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 05:46:25.943 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 05:46:25.973 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 09:01:34.571 PM] [32minfo[39m: 	[32mPOST /api/v1/register 404 85 - 0.946 ms[39m
+[2024-09-08 09:02:43.328 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-08 09:02:43.376 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-08 09:02:46.091 PM] [31merror[39m: 	[31m[[39m
+[31m  { message: "'name' is required and must exceed 5 characters" },[39m
+[31m  { message: 'Invalid email address' },[39m
+[31m  { message: "'password' is required and must exceed 5 characters" }[39m
+[31m][39m
+[2024-09-08 09:42:25.478 PM] [31merror[39m: 	[31m[ { message: 'Passwords do not match' } ][39m
+[2024-09-08 09:42:33.555 PM] [31merror[39m: 	[31m[ { message: 'Passwords do not match' } ][39m

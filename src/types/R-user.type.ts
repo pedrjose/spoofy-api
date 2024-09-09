@@ -1,3 +1,4 @@
+/*
 import { Session, EncodeResult } from "../interfaces/Session";
 
 export type PartialSession = Omit<Session, "issued" | "expires">;
@@ -15,3 +16,4 @@ export type DecodeResult =
     };
 
 export type ExpirationStatus = "expired" | "active" | "grace";
+*/

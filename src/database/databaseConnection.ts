@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 
-import { config } from "../config";
+import { config, loadConfigVariables } from "../config";
 import { logger } from "../helpers";
+
+loadConfigVariables();
 
 export const connectMongoDB = async () => {
   const { databaseUrl, databaseUser, databasePassword } = config;

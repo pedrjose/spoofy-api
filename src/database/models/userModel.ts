@@ -1,6 +1,5 @@
 import mongoose, { Document } from "mongoose";
 import { IUserModel } from "../../interfaces/User";
-import { IPlaylist } from "../../interfaces/User";
 import { Schema } from "mongoose";
 import userTokenModel from "./userTokenModel";
 
