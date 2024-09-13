@@ -203,3 +203,38 @@
 [31m][39m
 [2024-09-08 09:42:25.478 PM] [31merror[39m: 	[31m[ { message: 'Passwords do not match' } ][39m
 [2024-09-08 09:42:33.555 PM] [31merror[39m: 	[31m[ { message: 'Passwords do not match' } ][39m
+[2024-09-09 08:26:27.650 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:27.662 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:27.715 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:27.817 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:27.967 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:28.168 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:28.420 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:28.722 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:29.072 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:29.473 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:29.925 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:30.427 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:30.929 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:31.431 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:31.932 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:32.433 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:32.935 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:33.436 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:33.937 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:34.438 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:34.940 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:35.441 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:35.943 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:36.444 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:36.945 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:37.448 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:37.949 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:38.451 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:38.951 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:39.453 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:39.955 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:26:40.457 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-09 08:28:03.960 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-09 08:28:04.033 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-09 11:06:33.928 PM] [32minfo[39m: 	[32mRedis client connected[39m
