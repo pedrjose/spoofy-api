@@ -238,3 +238,42 @@
 [2024-09-09 08:28:03.960 AM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-09-09 08:28:04.033 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
 [2024-09-09 11:06:33.928 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 11:16:09.574 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:16:09.588 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:16:09.615 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 11:16:09.640 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:16:09.745 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:16:09.898 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:16:10.100 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:16:10.353 AM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-15 11:17:57.988 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 11:17:58.021 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 11:18:35.756 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 11:19:05.756 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-15 11:19:05.757 AM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-09-15 11:19:45.108 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 11:20:20.010 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 11:20:20.044 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 01:03:16.563 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 01:03:16.565 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 01:04:18.094 PM] [32minfo[39m: 	[32mGET /api/v1/api/v1/protected 404 85 - 0.721 ms[39m
+[2024-09-15 03:07:23.561 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:07:23.605 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:43:33.162 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:43:33.202 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:43:39.926 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:43:39.980 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:44:02.074 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:44:02.107 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:44:18.599 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:44:18.630 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:44:36.193 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:44:36.224 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:44:44.418 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:44:44.451 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:45:10.539 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:45:10.579 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:46:47.418 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:46:47.461 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:49:11.402 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:49:11.430 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
