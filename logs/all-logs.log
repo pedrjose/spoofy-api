@@ -277,3 +277,94 @@
 [2024-09-15 03:46:47.461 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
 [2024-09-15 03:49:11.402 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-09-15 03:49:11.430 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:57:18.763 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 03:57:18.796 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 03:57:22.199 PM] [32minfo[39m: 	[32mGET /api/v1/api/v1/adminprotected 404 85 - 11.209 ms[39m
+[2024-09-15 03:57:51.276 PM] [31merror[39m: 	[31muser 66e6f2f84293bf61d98cb9c3 attempted to access admin only route[39m
+[2024-09-15 03:57:54.885 PM] [32minfo[39m: 	[32mGET /api/v1/api/v1/admin/users 404 85 - 1.031 ms[39m
+[2024-09-15 03:58:02.940 PM] [31merror[39m: 	[31muser 66e6f2f84293bf61d98cb9c3 attempted to access admin only route[39m
+[2024-09-15 03:58:43.564 PM] [32minfo[39m: 	[32mPOST /api/v1/api/v1/admin/createAccount 404 85 - 0.395 ms[39m
+[2024-09-15 03:58:55.146 PM] [31merror[39m: 	[31muser 66e6f2f84293bf61d98cb9c3 attempted to access admin only route[39m
+[2024-09-15 03:59:14.311 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 03:59:14.312 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 04:14:49.186 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 04:14:49.229 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:14:49.229 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:14:49.242 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:18:40.421 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 04:18:40.452 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017[39m
+[2024-09-15 04:19:23.853 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 04:19:23.888 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:19:23.889 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:19:23.901 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:32:25.377 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 04:32:25.412 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:32:25.413 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:32:25.425 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:38:35.622 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 04:38:35.657 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:38:35.658 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:38:35.673 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:42:02.398 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 04:42:02.433 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:42:02.433 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 04:42:02.448 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 05:39:02.239 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 05:39:02.280 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 05:39:02.280 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 05:39:02.294 PM] [31merror[39m: 	[31mAuthentication failed.[39m
+[2024-09-15 05:41:31.390 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-15 05:41:31.432 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/admin[39m
+[2024-09-15 05:49:59.467 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:49:59.468 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:51:47.009 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:51:47.010 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:51:51.711 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:51:51.711 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:51:59.111 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:51:59.112 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:52:12.344 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:52:12.344 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:56:32.358 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:56:32.359 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:56:46.290 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 05:56:46.291 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 06:18:24.451 PM] [33mwarn[39m: 	[33mThe refresh token sent from 66e74de75853ba727eb07789 could be used in another device. All devices were signed out[39m
+[2024-09-15 06:46:13.911 PM] [32minfo[39m: 	[32mGET /api/v1/api/v1/protected 404 85 - 2.256 ms[39m
+[2024-09-15 06:57:13.722 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 06:57:13.723 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 06:57:35.023 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 06:57:35.024 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-09-15 07:03:06.325 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:01:00.560 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:00.566 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:00.620 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:00.725 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:00.877 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:01.082 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:01.338 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:01.641 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:01.996 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:02.400 PM] [31merror[39m: 	[31mRedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+[2024-09-22 02:01:59.335 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:01:59.368 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/admin[39m
+[2024-09-22 02:02:15.275 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:12.012 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:16.327 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:19.296 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:23.619 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:45.684 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:51.296 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:04:54.154 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-22 02:05:08.205 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-29 09:55:45.237 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 09:56:14.526 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 09:56:18.597 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 09:56:37.889 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 10:00:19.461 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 10:00:46.124 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 10:00:50.199 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 10:00:54.296 AM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-09-29 10:01:27.922 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-29 10:02:00.559 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-09-29 10:02:00.572 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m

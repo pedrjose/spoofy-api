@@ -13,8 +13,5 @@ export const connectMongoDB = async () => {
     .on("disconnected", connectMongoDB)
     .once("open", () => logger.info(`MongoDB connected to ${databaseUrl}`),);
 
-  await mongoose.connect(databaseUrl, {
-    user: databaseUser,
-    pass: databasePassword,
-  });
+  await mongoose.connect(databaseUrl);
 };

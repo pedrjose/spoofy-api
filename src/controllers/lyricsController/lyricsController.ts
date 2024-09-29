@@ -1,3 +1,4 @@
+/*
 import { Request, Response, NextFunction } from "express";
 
 import { addLyricService, removeLyricService } from "../../services/user.service";
@@ -56,3 +57,4 @@ export const addLyricController = async (req: Request, res: Response) => {
       }
     }
   };
+*/
