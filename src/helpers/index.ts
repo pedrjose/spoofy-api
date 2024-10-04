@@ -4,3 +4,4 @@ export * from "./response";
 export * from "./errorHandler";
 export * from "./hashPassword";
 export * from "./tokens";
+export * from "./vagalumeApi";

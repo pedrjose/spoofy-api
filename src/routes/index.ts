@@ -4,6 +4,7 @@ import { config } from "../config";
 import authRoutes from "./auth";
 import adminRoutes from "./admin";
 import protectedRoutes from "./protected";
+import lyricsRoutes from "./lyrics"
 import test from "./test"
 
 
@@ -17,6 +18,8 @@ const routes = (app: Application) => {
   app.use(apiPrefix, authRoutes);
 
   app.use(apiPrefix, protectedRoutes);
+
+  app.use(apiPrefix, lyricsRoutes);
 
   app.use(`${apiPrefix}/admin`, adminRoutes);
 

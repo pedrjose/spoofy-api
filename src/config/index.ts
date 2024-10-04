@@ -22,6 +22,9 @@ export const config = {
 
     // redis
     redisUrl: "redis://localhost:6379",
+
+    // vagalume
+    vagalumeApiKey: "33f41a11054da7ad14a5a6e156034364"
   };
 
 export const loadConfigVariables = () => {
@@ -58,4 +61,7 @@ export const loadConfigVariables = () => {
     config.databaseUrl = env("DATABASE_URL", config.databaseUrl) as string;
     config.databaseUser = env("DATABASE_USER", config.databaseUser) as string;
     config.databasePassword = env("DATABASE_PASSWORD", config.databasePassword) as string;
+
+    // vagalume config
+    config.vagalumeApiKey = env("VAGALUME_API_KEY", config.vagalumeApiKey) as string;
 }

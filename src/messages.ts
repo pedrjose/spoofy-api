@@ -4,9 +4,9 @@ export const messages = {
   APP_SERVER_ERROR: "Oops, something went wrong!",
   NOT_FOUND: `Not Found. Try using /api/${config.API_VERSION} to access the api resource`,
   RESOURCE_NOT_FOUND: "No resource(s) found",
-  ACCESS_DENIED: "Access denied! ❌",
-  SUCCESS_LOGIN: "Successful Login! 😊",
-  SUCCESS_LOGOUT: "Successful Logout! 🛫",
+  ACCESS_DENIED: "Access denied!",
+  SUCCESS_LOGIN: "Successful Login!",
+  SUCCESS_LOGOUT: "Successful Logout!",
   NO_AUTH_TOKEN: "No auth token",
   INVALID_TOKEN: "Invalid token",
   EMPTY_TOKEN: "Refresh token unavailable",
@@ -19,4 +19,5 @@ export const messages = {
   UNABLE_DELETE_USER: "Unable to delete user data",
   CANT_DELETE_OWN_USER: "You cannot delete your own user",
   UNABLE_RETRIEVE_DATA: "Unable to retrieve data",
+  INVALID_BODY: "Invalid request body"
 };
