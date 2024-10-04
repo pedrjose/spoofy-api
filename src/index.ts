@@ -1,19 +1,76 @@
-import * as express from "express";
-import { connectDatabase } from "./Database/db";
-import * as dotenv from "dotenv";
-dotenv.config();
+import cors, { CorsOptions } from 'cors';
+import helmet from "helmet";
+import cookieParser from "cookie-parser";
+import createError from "http-errors";
+import express from 'express';
+import { connectMongoDB } from "./database/databaseConnection";
+import { errorHandler } from "./helpers";
 
-import { corsAuth } from "./Middlewares/CorsModdleware";
-import userRoute from "./Routes/user.route";
+import passport from "./middlewares/passport";
 
-const port = process.env.PORT || 3000;
-const app = express();
+import httpLogger from "./middlewares/HttpLogger";
 
-app.use(express.json());
-app.use("/user", corsAuth, userRoute);
+import { loadConfigVariables } from "./config";
+import redisClient from './redis/redisConnection';
+import { messages } from './messages';
+import routes from "./routes";
 
-connectDatabase();
 
-app.listen(port, () =>
-  console.log(`\nTHE SERVER IS HOSTED ON PORT ${port}...`)
-);
+loadConfigVariables();
+
+const allowedList = [
+  "http://localhost:3000",
+  "http://localhost:8000",
+];
+
+const corsOptions: CorsOptions = {
+  credentials: true,
+  origin: (origin: any, callback: any) => {
+    if (allowedList.includes(origin ?? "") || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
+(async () => {
+  try {
+    await connectMongoDB();
+
+    const port = parseInt(process.env.PORT ?? "0", 10) || 3000;
+    const app = express();
+
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: false }));
+
+    app.use(cookieParser());
+
+    app.use(cors(corsOptions));
+    
+    app.use(helmet());
+
+    routes(app)
+
+    app.use(passport);
+
+    redisClient.ping();
+
+    app.use(httpLogger);
+
+    app.use((_, __, next) => next(createError(404, messages.NOT_FOUND)));
+
+    app.use(errorHandler);
+
+    app.listen(port, () =>
+      console.log(`The Server is Hosted on Port ${port}...`)
+    );
+  } catch (error) {
+    console.log('Failed to start the application:', error);
+  }
+})();
+
+
+
+
+

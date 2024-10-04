@@ -1,7 +1,11 @@
-FROM node:latest
-WORKDIR /spoofy-api
+FROM --platform=$BUILDPLATFORM node:current-alpine
+
+WORKDIR /app
 COPY . .
-RUN rm -rf node_modules
-RUN npm i
-CMD ["npm", "start"]
+
+RUN npm install
+RUN npm run build
+
 EXPOSE 3000
+
+CMD ["npm", "start"]
