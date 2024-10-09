@@ -1,111 +1,74 @@
 /*
 import { Request, Response } from "express";
+import createHttpError from "http-errors";
 
-import { 
-    createPlaylistService,
-    removePlaylistService, 
-    findPlaylistByUserService, 
-    findPlaylistByIdService 
-} from "../../services/user.service";
+import { asyncWrapper } from "../utils/asyncWrapper";
+import { logger, sendError, sendResponse, vagalumeRequest} from "../../helpers";
+import { messages } from "../../messages";
 
-export const createPlaylistController = async (req: Request, res: Response) => {
-  const { id, playlistName } = req.body;
-  try {
-    const createPlaylist = await createPlaylistService(id, playlistName);
 
-    res.send(createPlaylist);
-  } catch (error) {
-    if (error instanceof Error) {
-      res.status(500).send({
-        message: error.message,
-        promise: false,
-        expectedError: true
-      });
-    } else {
-      res.status(500).send({
-        message: error,
-        promise: false,
-        expectedError: false
-      });
+const playlistController = {
+  getPlaylists: asyncWrapper(async (req: Request, res: Response) => {
+    try {
+      const { music, artist} = req.body;
+      
+      if (!music || !artist) {
+        logger.error(messages.INVALID_BODY);
+        throw createHttpError(400, messages.INVALID_BODY);
+      }
+    
+      const url = `https://api.vagalume.com.br/search.php?art=${artist}&mus=${music}`;
+
+      const vagalumeResponse = await vagalumeRequest(url);
+
+      if (vagalumeResponse.status !== 200) {
+        logger.error({
+          status: vagalumeResponse.status,
+          error: vagalumeResponse.error,
+        });
+        throw createHttpError(500, {SearchStatus: vagalumeResponse.status, error: vagalumeResponse.error});
+      }
+
+      return sendResponse(
+        res,
+        vagalumeResponse.data,
+        200,
+      );
+    } catch (err) {
+      const error = err as Error;
+
+      logger.error(error.message);
+      return sendError(res, createHttpError(403, error));
     }
-  }
+  }),
+
+  getTop10Lyrics: asyncWrapper(async (req: Request, res: Response) => {
+    try {
+      const url = `https://api.vagalume.com.br/rank.php?type=mus&period=month&scope=all&limit=10`;
+
+      const vagalumeResponse = await vagalumeRequest(url);
+
+      if (vagalumeResponse.status !== 200) {
+        logger.error({
+          status: vagalumeResponse.status,
+          error: vagalumeResponse.error,
+        });
+        throw createHttpError(500, {SearchStatus: vagalumeResponse.status, error: vagalumeResponse.error});
+      }
+
+      return sendResponse(
+        res,
+        vagalumeResponse.data,
+        200,
+      );
+    } catch (err) {
+      const error = err as Error;
+
+      logger.error(error.message);
+      return sendError(res, createHttpError(403, error));
+    }
+  }),
 };
 
-export const removePlaylistController = async (req: Request, res: Response) => {
-  const { id, playlistId } = req.body;
-
-  try {
-    const removePlaylist = await removePlaylistService(id, playlistId);
-
-    res.send(removePlaylist);
-  } catch (error) {
-    if (error instanceof Error) {
-      res.status(500).send({
-        message: error.message,
-        promise: false,
-        expectedError: true
-      });
-    } else {
-      res.status(500).send({
-        message: error,
-        promise: false,
-        expectedError: false
-      });
-    }
-  }
-};
-
-export const findPlaylistByUserController = async (
-    req: Request,
-    res: Response
-  ) => {
-    const { userId } = req.body;
-  
-    try {
-      const userPlaylists = await findPlaylistByUserService(userId);
-  
-      res.send(userPlaylists);
-    } catch (error) {
-      if (error instanceof Error) {
-        res.status(500).send({
-          message: error.message,
-          promise: false,
-          expectedError: true
-        });
-      } else {
-        res.status(500).send({
-          message: error,
-          promise: false,
-          expectedError: false
-        });
-      }
-    }
-  };
-  
-  export const findPlaylistByIdController = async (
-    req: Request,
-    res: Response
-  ) => {
-    const { userId, playlistId } = req.body;
-  
-    try {
-      const playlist = await findPlaylistByIdService(userId, playlistId);
-  
-      res.send(playlist);
-    } catch (error) {
-      if (error instanceof Error) {
-        res.status(500).send({
-          message: error.message,
-          promise: false,
-          expectedError: true
-        });
-      } else {
-        res.status(500).send({
-          message: error,
-          promise: false,
-          expectedError: false
-        });
-      }
-    }
-  };
+export default lyricsController;
 */
