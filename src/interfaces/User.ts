@@ -30,7 +30,6 @@ export interface ILyric {
 }
 
 export interface IPlaylist {
-  playlistId: string;
   playlistName: string;
   playlistLyrics: ILyric[];
 }

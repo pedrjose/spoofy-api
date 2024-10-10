@@ -1,37 +1,34 @@
-/*
 import { Request, Response } from "express";
 import createHttpError from "http-errors";
 
 import { asyncWrapper } from "../utils/asyncWrapper";
 import { logger, sendError, sendResponse, vagalumeRequest} from "../../helpers";
+import { userService } from "../../services/userService";
 import { messages } from "../../messages";
 
 
 const playlistController = {
   getPlaylists: asyncWrapper(async (req: Request, res: Response) => {
     try {
-      const { music, artist} = req.body;
+      const { userId } = req;
+      const userPlaylistName = req.query.name as string | undefined;
+
+      if (!userId) {
+        logger.error(messages.CANNOT_RETRIEVE_USER_DATA);
+        throw createHttpError(403, messages.CANNOT_RETRIEVE_USER_DATA);
+      }
+
+      const user = await userService.findUserById(userId);
+
+      let playlist = user?.myPlaylists
       
-      if (!music || !artist) {
-        logger.error(messages.INVALID_BODY);
-        throw createHttpError(400, messages.INVALID_BODY);
-      }
-    
-      const url = `https://api.vagalume.com.br/search.php?art=${artist}&mus=${music}`;
-
-      const vagalumeResponse = await vagalumeRequest(url);
-
-      if (vagalumeResponse.status !== 200) {
-        logger.error({
-          status: vagalumeResponse.status,
-          error: vagalumeResponse.error,
-        });
-        throw createHttpError(500, {SearchStatus: vagalumeResponse.status, error: vagalumeResponse.error});
+      if (userPlaylistName) {
+        playlist = playlist?.filter(playlist => playlist.playlistName.toLowerCase().includes(userPlaylistName.toLowerCase()));
       }
 
       return sendResponse(
         res,
-        vagalumeResponse.data,
+        playlist,
         200,
       );
     } catch (err) {
@@ -42,33 +39,6 @@ const playlistController = {
     }
   }),
 
-  getTop10Lyrics: asyncWrapper(async (req: Request, res: Response) => {
-    try {
-      const url = `https://api.vagalume.com.br/rank.php?type=mus&period=month&scope=all&limit=10`;
-
-      const vagalumeResponse = await vagalumeRequest(url);
-
-      if (vagalumeResponse.status !== 200) {
-        logger.error({
-          status: vagalumeResponse.status,
-          error: vagalumeResponse.error,
-        });
-        throw createHttpError(500, {SearchStatus: vagalumeResponse.status, error: vagalumeResponse.error});
-      }
-
-      return sendResponse(
-        res,
-        vagalumeResponse.data,
-        200,
-      );
-    } catch (err) {
-      const error = err as Error;
-
-      logger.error(error.message);
-      return sendError(res, createHttpError(403, error));
-    }
-  }),
 };
 
-export default lyricsController;
-*/
+export default playlistController;
