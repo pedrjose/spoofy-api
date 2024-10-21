@@ -633,3 +633,61 @@
 [2024-10-09 08:48:15.541 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-10-09 08:48:15.554 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
 [2024-10-09 08:48:43.534 PM] [31merror[39m: 	[31mAccount not logged in[39m
+[2024-10-12 12:55:41.008 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 12:55:41.022 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 12:55:48.966 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 12:55:48.978 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:01:21.415 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:01:21.426 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:01:52.538 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:01:52.549 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:02:30.308 PM] [32minfo[39m: 	[32mPOST /api/v1/playlists/Test 404 85 - 0.917 ms[39m
+[2024-10-12 01:04:13.985 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:04:13.997 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:04:24.549 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:04:24.565 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:04:33.858 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:04:33.879 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:04:40.601 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:04:40.613 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-12 01:08:49.008 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-12 01:08:49.028 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 09:31:51.896 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 09:31:51.911 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 09:35:46.874 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 09:35:46.892 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 09:39:08.537 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 09:39:08.549 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:07:14.628 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:07:14.661 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:15:09.938 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:15:09.953 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:16:07.131 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:16:07.147 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:16:22.603 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:16:22.621 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:17:05.650 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:17:05.661 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:17:25.333 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:17:25.343 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-19 03:18:24.341 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-19 03:18:24.373 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:48:08.538 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:48:08.553 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:50:44.139 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:50:44.152 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:51:09.258 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:51:09.277 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:51:21.569 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:51:21.580 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:53:31.417 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:53:31.430 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:54:11.721 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:54:11.738 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 09:54:35.433 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 09:54:35.445 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 10:02:53.395 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 10:02:53.406 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 10:03:12.301 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-10-20 10:03:12.314 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-10-20 10:26:35.396 PM] [32minfo[39m: 	[32mRedis client connected[39m
