@@ -9,7 +9,8 @@ import { messages } from "../../messages";
 const lyricsController = {
   getLyrics: asyncWrapper(async (req: Request, res: Response) => {
     try {
-      const { music, artist} = req.body;
+      const music = req.query.music ? decodeURIComponent(String(req.query.music)) : '';
+      const artist = req.query.artist ? decodeURIComponent(String(req.query.artist)) : '';
       
       if (!music || !artist) {
         logger.error(messages.INVALID_BODY);
