@@ -15,12 +15,18 @@ router.post(
   "/playlist/:playlistName",
   authVerifier.verifyAccessToken,
   playlistController.playlist.createPlaylist,
-)
+);
 
 router.patch(
   "/playlist/lyrics",
   authVerifier.verifyAccessToken,
   playlistController.playlist.updateLyricToPlaylist,
-)
+);
 
-export default router
+router.delete(
+  "/playlist/:playlistId",
+  authVerifier.verifyAccessToken,
+  playlistController.playlist.deletePlaylist,
+);
+
+export default router;

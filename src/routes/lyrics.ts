@@ -16,6 +16,12 @@ router.get(
   "/lyrics/top",
   authVerifier.verifyAccessToken,
   lyricsControllerIndex.lyrics.getTop10Lyrics,
-)
+);
 
-export default router
+router.delete(
+  "/lyrics/:playlistId/:lyricId",
+  authVerifier.verifyAccessToken,
+  lyricsControllerIndex.lyrics.deleteLyricToPlaylist,
+);
+
+export default router;

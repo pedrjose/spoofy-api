@@ -152,4 +152,32 @@ export const userService = {
 
         return convertUserDocToUser(userDoc);
     },
+
+    deletePlaylistById: async (userId: string, playlistId: string) => {
+        const userDoc = await userModel.findOneAndUpdate(
+            { _id: new Types.ObjectId(userId) },
+            { $pull: { myPlaylists: { _id: new Types.ObjectId(playlistId) } } },
+            { new: true }
+        );
+
+        if (!userDoc) {
+            return null;
+        }
+
+        return convertUserDocToUser(userDoc);
+    },
+
+    deleteLyricById: async (userId: string, playlistId: string, lyricId: string) => {
+        const result = await userModel.findOneAndUpdate(
+            { _id: new Types.ObjectId(userId), "myPlaylists._id": new Types.ObjectId(playlistId) },
+            { $pull: { "myPlaylists.$.playlistLyrics": { _id: new Types.ObjectId(lyricId) } } },
+            { new: true }
+        );
+    
+        if (!result) {
+            return null;
+        }
+    
+        return convertUserDocToUser(result);
+    }
 }
