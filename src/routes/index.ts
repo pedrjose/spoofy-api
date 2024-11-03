@@ -14,8 +14,6 @@ const { API_VERSION } = config;
 const routes = (app: Application) => {
   const apiPrefix = `/api/${API_VERSION}`;
 
-  app.use(apiPrefix, test);
-
   app.use(apiPrefix, authRoutes);
 
   app.use(apiPrefix, protectedRoutes);
