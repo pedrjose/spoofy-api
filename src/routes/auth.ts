@@ -17,6 +17,8 @@ router.post("/logout", authVerifier.verifyAccessToken, authController.logout);
 
 router.get("/profile", authVerifier.verifyAccessToken, authController.getProfile);
 
+router.patch("/profile", authVerifier.verifyAccessToken, authController.updateProfile);
+
 router.patch("/profile/photo", authVerifier.verifyAccessToken, multerUploader.uploaderMiddleware, authController.updatePerfilImage);
 
 export default router;

@@ -987,3 +987,11 @@
 [2024-11-02 11:11:16.085 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
 [2024-11-02 11:11:59.835 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-11-02 11:11:59.850 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-03 11:22:09.124 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-03 11:22:09.143 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-03 11:24:55.315 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-03 11:24:55.329 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-03 11:25:06.206 AM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-03 11:25:06.217 AM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-03 11:25:28.614 AM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-03 11:25:28.615 AM] [31merror[39m: 	[31mInvalid email or password[39m

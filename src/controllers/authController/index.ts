@@ -10,6 +10,7 @@ const authController = {
   refreshToken: refreshTokenController,
   logout: logoutController,
   getProfile: profileController.getProfile,
+  updateProfile: profileController.updateProfile,
   updatePerfilImage: profileController.updatePerfilImage,
 };
 
