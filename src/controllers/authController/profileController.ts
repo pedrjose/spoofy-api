@@ -5,6 +5,8 @@ import { asyncWrapper } from "../utils/asyncWrapper";
 import { hashPassword, logger, sendError, sendResponse } from "../../helpers";
 import { userService } from "../../services/userService";
 import { messages } from "../../messages";
+import { Console } from "console";
+import formidable, { Files } from "formidable";
 
 const profileController = {
   getProfile: asyncWrapper(async (req: Request, res: Response) => {
@@ -43,7 +45,7 @@ const profileController = {
     }
   }),
 
-  updateProfile: asyncWrapper(async (req: Request, res: Response) => {
+  updatePerfilImage: asyncWrapper(async (req: Request, res: Response) => {
     try {
       const { userId } = req;
 
@@ -52,19 +54,16 @@ const profileController = {
         throw createHttpError(401, messages.INVALID_TOKEN);
       }
 
-      const { name, password, photo, aboutMe } = req.body;
+      const photoPath = req.file;
 
-      let hash: string | undefined;
-
-      if (password) {
-        hash = await hashPassword(password);
+      if (!photoPath) {
+        logger.error(messages.UPLOAD_FAILED);
+        throw createHttpError(400, messages.UPLOAD_FAILED);
       }
 
       const updatedUser = await userService.findAndUpdateUserById({
         id: userId,
-        name: name,
-        password: hash,
-        photo: photo,
+        photo: photoPath?.path,
       });
 
       if (!updatedUser) {
@@ -84,6 +83,7 @@ const profileController = {
         },
         200,
       );
+
     } catch (err) {
       const error = err as Error;
 

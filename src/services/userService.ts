@@ -47,6 +47,7 @@ export const userService = {
         email: string,
         hashPassword: string,
         role: UserRoles,
+        photo: string,
         myPlaylists: Array<IPlaylist>,
     ): Promise<User> => {
         const userDoc = await userModel.create({
@@ -54,6 +55,7 @@ export const userService = {
             email,
             password: hashPassword,
             role,
+            photo,
             myPlaylists,
         });
 

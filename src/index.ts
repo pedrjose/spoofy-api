@@ -15,7 +15,6 @@ import redisClient from './redis/redisConnection';
 import { messages } from './messages';
 import routes from "./routes";
 
-
 loadConfigVariables();
 
 const allowedList = [
@@ -42,7 +41,7 @@ const corsOptions: CorsOptions = {
     const app = express();
 
     app.use(express.json());
-    app.use(express.urlencoded({ extended: false }));
+    app.use(express.urlencoded({ extended: true }));
 
     app.use(cookieParser());
 
