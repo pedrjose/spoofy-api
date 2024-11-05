@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import createHttpError from "http-errors";
 
 import { asyncWrapper } from "../utils/asyncWrapper";
-import { hashPassword, logger, sendError, sendResponse } from "../../helpers";
+import { logger, sendError, sendResponse } from "../../helpers";
 import { userService } from "../../services/userService";
 import { messages } from "../../messages";
 
@@ -52,19 +52,12 @@ const profileController = {
         throw createHttpError(401, messages.INVALID_TOKEN);
       }
 
-      const { name, password, photo, aboutMe } = req.body;
-
-      let hash: string | undefined;
-
-      if (password) {
-        hash = await hashPassword(password);
-      }
+      const { name, email } = req.body;
 
       const updatedUser = await userService.findAndUpdateUserById({
         id: userId,
         name: name,
-        password: hash,
-        photo: photo,
+        email: email,
       });
 
       if (!updatedUser) {
@@ -84,6 +77,53 @@ const profileController = {
         },
         200,
       );
+    } catch (err) {
+      const error = err as Error;
+
+      logger.error(error.message);
+      return sendError(res, error);
+    }
+  }),
+
+  updatePerfilImage: asyncWrapper(async (req: Request, res: Response) => {
+    try {
+      const { userId } = req;
+
+      if (!userId) {
+        logger.error(messages.INVALID_TOKEN);
+        throw createHttpError(401, messages.INVALID_TOKEN);
+      }
+
+      const photoPath = req.file;
+
+      if (!photoPath) {
+        logger.error(messages.UPLOAD_FAILED);
+        throw createHttpError(400, messages.UPLOAD_FAILED);
+      }
+
+      const updatedUser = await userService.findAndUpdateUserById({
+        id: userId,
+        photo: photoPath?.path,
+      });
+
+      if (!updatedUser) {
+        logger.error(messages.UNABLE_UPDATE_USER);
+        return sendError(res, createHttpError(400, messages.UNABLE_UPDATE_USER));
+      }
+
+      return sendResponse(
+        res,
+        {
+          id: updatedUser.id,
+          name: updatedUser.name,
+          email: updatedUser.email,
+          role: updatedUser.role,
+          photo: updatedUser.photo,
+          myPlaylists: updatedUser.myPlaylists,
+        },
+        200,
+      );
+
     } catch (err) {
       const error = err as Error;
 

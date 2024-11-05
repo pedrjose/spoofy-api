@@ -11,6 +11,7 @@ const authController = {
   logout: logoutController,
   getProfile: profileController.getProfile,
   updateProfile: profileController.updateProfile,
+  updatePerfilImage: profileController.updatePerfilImage,
 };
 
 export default authController;

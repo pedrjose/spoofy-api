@@ -9,7 +9,7 @@ import { asyncWrapper } from "../utils/asyncWrapper";
 
 const registerController = asyncWrapper(async (req: Request, res: Response) => {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password, photo } = req.body;
 
     const existingUser = await userService.findUserByEmail(email);
 
@@ -22,7 +22,7 @@ const registerController = asyncWrapper(async (req: Request, res: Response) => {
 
     const myPlaylists: IPlaylist[] = [];
 
-    await userService.create(name, email, hash, "user", myPlaylists);
+    await userService.create(name, email, hash, "user", photo || "", myPlaylists);
 
     return sendResponse(res, messages.ACCOUNT_CREATED, 201);
   } catch (err) {

@@ -19,5 +19,6 @@ export const messages = {
   UNABLE_DELETE_USER: "Unable to delete user data",
   CANT_DELETE_OWN_USER: "You cannot delete your own user",
   UNABLE_RETRIEVE_DATA: "Unable to retrieve data",
-  INVALID_BODY: "Invalid request body"
+  INVALID_BODY: "Invalid request body",
+  UPLOAD_FAILED: "Upload Failed",
 };

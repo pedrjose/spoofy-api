@@ -24,7 +24,12 @@ export const config = {
     redisUrl: "redis://localhost:6379",
 
     // vagalume
-    vagalumeApiKey: "33f41a11054da7ad14a5a6e156034364"
+    vagalumeApiKey: "33f41a11054da7ad14a5a6e156034364",
+
+    //Cloudinary
+    CloudinaryCloudName: "dgewhwiee",
+    CloudinaryApiKey: "998133269216118",
+    CloudinaryApiSecrete: "XUPkvxpVu9U9MaQTnsHOyZXQLLO",
   };
 
 export const loadConfigVariables = () => {
@@ -34,22 +39,10 @@ export const loadConfigVariables = () => {
     config.salt = env("SALT", config.salt) as number;
 
      // jwt parameters
-    config.refreshTokenPrivateKey = env(
-      "REFRESH_TOKEN_PRIVATE_KEY",
-      config.refreshTokenPrivateKey,
-    ) as string;
-    config.accessTokenPrivateKey = env(
-      "ACCESS_TOKEN_PRIVATE_KEY",
-      config.accessTokenPrivateKey,
-    ) as string;
-    config.refreshTokenExpiration = env(
-      "REFRESH_TOKEN_EXPIRATION",
-      config.refreshTokenExpiration,
-    ) as string;
-    config.accessTokenExpiration = env(
-      "ACCESS_TOKEN_EXPIRATION",
-      config.accessTokenExpiration,
-    ) as string;
+    config.refreshTokenPrivateKey = env("REFRESH_TOKEN_PRIVATE_KEY", config.refreshTokenPrivateKey) as string;
+    config.accessTokenPrivateKey = env("ACCESS_TOKEN_PRIVATE_KEY", config.accessTokenPrivateKey) as string;
+    config.refreshTokenExpiration = env("REFRESH_TOKEN_EXPIRATION", config.refreshTokenExpiration) as string;
+    config.accessTokenExpiration = env("ACCESS_TOKEN_EXPIRATION", config.accessTokenExpiration) as string;
 
     // token parameters
     config.cookieDomain = env("COOKIE_DOMAIN", config.cookieDomain) as string;
@@ -64,4 +57,9 @@ export const loadConfigVariables = () => {
 
     // vagalume config
     config.vagalumeApiKey = env("VAGALUME_API_KEY", config.vagalumeApiKey) as string;
+
+    // cloudinary config
+    config.CloudinaryCloudName = env("CLOUDINARY_CLOUD_NAME", config.CloudinaryCloudName) as string;
+    config.CloudinaryApiKey = env("CLOUDINARY_API_KEY", config.CloudinaryApiKey) as string;
+    config.CloudinaryApiSecrete = env("CLOUDINARY_API_SECRET", config.CloudinaryApiSecrete) as string;
 }

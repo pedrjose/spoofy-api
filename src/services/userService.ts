@@ -15,6 +15,7 @@ type UserDoc = Document<unknown, NonNullable<unknown>, IUserModel> &
 interface UpdateUserParams {
     id: string;
     name?: string;
+    email?: string;
     password?: string;
     photo?: string;
     myPlaylists?: Array<IPlaylist>;
@@ -47,6 +48,7 @@ export const userService = {
         email: string,
         hashPassword: string,
         role: UserRoles,
+        photo: string,
         myPlaylists: Array<IPlaylist>,
     ): Promise<User> => {
         const userDoc = await userModel.create({
@@ -54,6 +56,7 @@ export const userService = {
             email,
             password: hashPassword,
             role,
+            photo,
             myPlaylists,
         });
 
@@ -89,6 +92,7 @@ export const userService = {
     findAndUpdateUserById: async ({
         id,
         name,
+        email,
         password,
         photo,
         myPlaylists,
@@ -97,6 +101,10 @@ export const userService = {
 
         if (name) {
             updateData.name = name;
+        }
+
+        if (email) {
+            updateData.email = email;
         }
 
         if (password) {
@@ -111,7 +119,7 @@ export const userService = {
             updateData.myPlaylists = myPlaylists;
         }
 
-        if (name || password || photo || myPlaylists) {
+        if (name || email || password || photo || myPlaylists) {
             const row = await userModel
                 .findOneAndUpdate({ _id: new Types.ObjectId(id) }, updateData, { returnDocument: "after" })
                 .exec();

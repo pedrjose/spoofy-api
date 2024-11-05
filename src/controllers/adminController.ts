@@ -11,7 +11,7 @@ import { userService } from "../services/userService";
 const adminController = {
   createAccount: asyncWrapper(async (req: Request, res: Response) => {
     try {
-      const { name, email, password, role } = req.body;
+      const { name, email, password, role, photo } = req.body;
 
       const existingUser = await userService.findUserByEmail(email);
 
@@ -22,7 +22,7 @@ const adminController = {
 
       const hash = await hashPassword(password);
 
-      await userService.create(name, email, hash, role, []);
+      await userService.create(name, email, hash, role, photo, []);
 
       return sendResponse(res, messages.ACCOUNT_CREATED, 201);
     } catch (err) {
