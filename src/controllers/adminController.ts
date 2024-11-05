@@ -75,12 +75,12 @@ const adminController = {
         hash = await hashPassword(password);
       }
 
-      const updatedUser = await userService.findAndUpdateUserById(
-        userId,
-        name,
-        hash,
-        photo,
-      );
+      const updatedUser = await userService.findAndUpdateUserById({
+        id: userId,
+        name: name,
+        password: hash,
+        photo: photo,
+      });
 
       if (!updatedUser) {
         logger.error(messages.UNABLE_UPDATE_USER);

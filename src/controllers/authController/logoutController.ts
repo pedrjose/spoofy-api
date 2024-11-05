@@ -27,8 +27,7 @@ const logoutController = asyncWrapper(async (req: Request, res: Response) => {
 
     res.clearCookie(config.refreshTokenName);
 
-    res.setHeader("Location", "/");
-    return sendResponse(res, messages.SUCCESS_LOGOUT, 303);
+    return sendResponse(res, messages.SUCCESS_LOGOUT, 200);
   } catch (err) {
     const error = err as Error;
 

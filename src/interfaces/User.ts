@@ -26,11 +26,10 @@ export interface ILyric {
   musicName: string;
   musicLyric: string;
   translate: string;
-  badwords: string;
+  badwords: boolean;
 }
 
-export interface IPlaylist {
-  playlistId: string;
+export interface IPlaylist{
   playlistName: string;
   playlistLyrics: ILyric[];
 }

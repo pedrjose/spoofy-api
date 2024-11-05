@@ -1,7 +1,7 @@
 import { Document, Types } from "mongoose";
 
 import userModel from "../database/models/userModel";
-import { IPlaylist, IUserModel } from "../interfaces/User";
+import { IPlaylist, IUserModel, ILyric } from "../interfaces/User";
 import { User, UserRoles } from "../types";
 
 type UserDoc = Document<unknown, NonNullable<unknown>, IUserModel> &
@@ -11,6 +11,20 @@ type UserDoc = Document<unknown, NonNullable<unknown>, IUserModel> &
         },
         never
     >;
+
+interface UpdateUserParams {
+    id: string;
+    name?: string;
+    password?: string;
+    photo?: string;
+    myPlaylists?: Array<IPlaylist>;
+}
+
+interface AddLyricToPlaylistParams {
+    id: string;
+    playlistId: string;
+    lyrics: ILyric[];
+}
 
 const convertUserDocToUser = (userDoc: UserDoc) => {
     const user: User = {
@@ -55,7 +69,7 @@ export const userService = {
 
         return convertUserDocToUser(userDoc);
     },
-    
+
     findAllUsers: async () => {
         const userDoc = await userModel.find().exec();
 
@@ -72,13 +86,14 @@ export const userService = {
         return convertUserDocToUser(userDoc);
     },
 
-    findAndUpdateUserById: async (
-        id: string,
-        name: string | undefined,
-        password: string | undefined,
-        photo: string | undefined,
-    ) => {
-        const updateData: { [key: string]: string } = {};
+    findAndUpdateUserById: async ({
+        id,
+        name,
+        password,
+        photo,
+        myPlaylists,
+    }: UpdateUserParams) => {
+        const updateData: { [key: string]: string | Array<IPlaylist> } = {};
 
         if (name) {
             updateData.name = name;
@@ -92,17 +107,39 @@ export const userService = {
             updateData.photo = photo;
         }
 
-        if (name || password || photo) {
+        if (myPlaylists) {
+            updateData.myPlaylists = myPlaylists;
+        }
+
+        if (name || password || photo || myPlaylists) {
             const row = await userModel
                 .findOneAndUpdate({ _id: new Types.ObjectId(id) }, updateData, { returnDocument: "after" })
                 .exec();
-
             if (row) {
                 return convertUserDocToUser(row);
             }
         }
 
         return null;
+    },
+
+    updateLyricToUserPlaylist: async ({
+        id,
+        playlistId,
+        lyrics,
+    }: AddLyricToPlaylistParams) => {
+
+        const updatedUserDoc = await userModel.findOneAndUpdate(
+            { _id: new Types.ObjectId(id), "myPlaylists._id": new Types.ObjectId(playlistId) },
+            { $set: { "myPlaylists.$.playlistLyrics": lyrics }},
+            { returnDocument: "after" },
+        ).exec();
+
+        if (!updatedUserDoc) {
+            return null;
+        }
+
+        return convertUserDocToUser(updatedUserDoc);
     },
 
     deleteUserById: async (id: string) => {
@@ -115,4 +152,32 @@ export const userService = {
 
         return convertUserDocToUser(userDoc);
     },
+
+    deletePlaylistById: async (userId: string, playlistId: string) => {
+        const userDoc = await userModel.findOneAndUpdate(
+            { _id: new Types.ObjectId(userId) },
+            { $pull: { myPlaylists: { _id: new Types.ObjectId(playlistId) } } },
+            { new: true }
+        );
+
+        if (!userDoc) {
+            return null;
+        }
+
+        return convertUserDocToUser(userDoc);
+    },
+
+    deleteLyricById: async (userId: string, playlistId: string, lyricId: string) => {
+        const result = await userModel.findOneAndUpdate(
+            { _id: new Types.ObjectId(userId), "myPlaylists._id": new Types.ObjectId(playlistId) },
+            { $pull: { "myPlaylists.$.playlistLyrics": { _id: new Types.ObjectId(lyricId) } } },
+            { new: true }
+        );
+    
+        if (!result) {
+            return null;
+        }
+    
+        return convertUserDocToUser(result);
+    }
 }
