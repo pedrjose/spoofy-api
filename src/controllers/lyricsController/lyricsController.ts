@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import createHttpError from "http-errors";
 
 import { asyncWrapper } from "../utils/asyncWrapper";
-import { logger, sendError, sendResponse, vagalumeRequest} from "../../helpers";
+import { logger, sendError, sendResponse, geniusRequest} from "../../helpers";
 import { messages } from "../../messages";
 import { userService } from "../../services/userService";
 
@@ -17,24 +17,16 @@ const lyricsController = {
         throw createHttpError(400, messages.INVALID_BODY);
       }
 
-      console.log(music)
-      console.log(artist)
-    
-      const url = `https://api.vagalume.com.br/search.php?art=${artist}&mus=${music}`;
+      const lyric = await geniusRequest(music, artist);
 
-      const vagalumeResponse = await vagalumeRequest(url);
-
-      if (vagalumeResponse.status !== 200) {
-        logger.error({
-          status: vagalumeResponse.status,
-          error: vagalumeResponse.error,
-        });
-        throw createHttpError(500, {SearchStatus: vagalumeResponse.status, error: vagalumeResponse.error});
+      if (!lyric) {
+        logger.error(messages.DATA_NOT_FOUND);
+        throw createHttpError(500, messages.DATA_NOT_FOUND);
       }
 
       return sendResponse(
         res,
-        vagalumeResponse.data,
+        lyric,
         200,
       );
     } catch (err) {
@@ -44,7 +36,7 @@ const lyricsController = {
       return sendError(res, createHttpError(403, error));
     }
   }),
-
+  /*
   getTop10Lyrics: asyncWrapper(async (req: Request, res: Response) => {
     try {
       const url = `https://api.vagalume.com.br/rank.php?type=mus&period=month&scope=all&limit=10`;
@@ -71,7 +63,7 @@ const lyricsController = {
       return sendError(res, createHttpError(403, error));
     }
   }),
-
+  */
   deleteLyricToPlaylist: asyncWrapper(async (req: Request, res: Response) => {
     try {
       const { userId } = req;
