@@ -36,34 +36,7 @@ const lyricsController = {
       return sendError(res, createHttpError(403, error));
     }
   }),
-  /*
-  getTop10Lyrics: asyncWrapper(async (req: Request, res: Response) => {
-    try {
-      const url = `https://api.vagalume.com.br/rank.php?type=mus&period=month&scope=all&limit=10`;
 
-      const vagalumeResponse = await vagalumeRequest(url);
-
-      if (vagalumeResponse.status !== 200) {
-        logger.error({
-          status: vagalumeResponse.status,
-          error: vagalumeResponse.error,
-        });
-        throw createHttpError(500, {SearchStatus: vagalumeResponse.status, error: vagalumeResponse.error});
-      }
-
-      return sendResponse(
-        res,
-        vagalumeResponse.data,
-        200,
-      );
-    } catch (err) {
-      const error = err as Error;
-
-      logger.error(error.message);
-      return sendError(res, createHttpError(403, error));
-    }
-  }),
-  */
   deleteLyricToPlaylist: asyncWrapper(async (req: Request, res: Response) => {
     try {
       const { userId } = req;
