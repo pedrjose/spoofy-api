@@ -7,13 +7,19 @@ import { lyricsControllerIndex } from "../controllers";
 const router = Router();
 
 router.get(
-  "/lyrics",
+  "/lyric",
   authVerifier.verifyAccessToken,
   lyricsControllerIndex.lyrics.getLyrics,
 );
 
+router.get(
+  "/lyric/:lyricId",
+  authVerifier.verifyAccessToken,
+  lyricsControllerIndex.lyrics.getLyricsById,
+);
+
 router.delete(
-  "/lyrics/:playlistId/:lyricId",
+  "/lyric/:playlistId/:lyricId",
   authVerifier.verifyAccessToken,
   lyricsControllerIndex.lyrics.deleteLyricToPlaylist,
 );
