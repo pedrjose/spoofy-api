@@ -54,6 +54,30 @@ const reviewController = {
     }
   }),
 
+  getReviewById: asyncWrapper(async (req: Request, res: Response) => {
+    try {
+      const reviewId = req.params.reviewId as string;
+
+      const reviews = await contentReviewService.findContentReviewById(reviewId);
+
+      if (!reviews) {
+        logger.error(messages.DATA_NOT_FOUND);
+        throw createHttpError(500, messages.DATA_NOT_FOUND);
+      }
+
+      return sendResponse(
+        res,
+        reviews,
+        200,
+      );
+    } catch (err) {
+      const error = err as Error;
+
+      logger.error(error.message);
+      return sendError(res, createHttpError(403, error));
+    }
+  }),
+
 
   getTop10Reviews: asyncWrapper(async (req: Request, res: Response) => {
     try {

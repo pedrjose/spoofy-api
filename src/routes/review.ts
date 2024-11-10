@@ -10,6 +10,8 @@ router.get("/reviews", authVerifier.verifyAccessToken, lyricsControllerIndex.rev
 
 router.get("/reviews/top", authVerifier.verifyAccessToken, lyricsControllerIndex.reviews.getTop10Reviews);
 
+router.get("/review/:reviewId", authVerifier.verifyAccessToken, lyricsControllerIndex.reviews.getReviewById);
+
 router.post("/review", authVerifier.verifyAccessToken, lyricsControllerIndex.reviews.createReview);
 
 router.post("/review/views/:reviewId", authVerifier.verifyRefreshToken, lyricsControllerIndex.reviews.incrementViewsToReviews);
