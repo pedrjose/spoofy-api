@@ -49,6 +49,11 @@ router.delete(
   adminController.deleteUser,
 );
 
-
+router.delete(
+  "/review/:reviewId",
+  authVerifier.verifyAccessToken,
+  authVerifier.adminOnly,
+  adminController.deleteReview,
+);
 
 export default router;

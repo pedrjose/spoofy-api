@@ -7,6 +7,7 @@ import { asyncWrapper } from "./utils/asyncWrapper";
 import { Error } from "../types";
 import { messages } from "../messages";
 import { userService } from "../services/userService";
+import { contentReviewService } from "services/contentReviewService";
 
 const adminController = {
   createAccount: asyncWrapper(async (req: Request, res: Response) => {
@@ -165,6 +166,35 @@ const adminController = {
 
       logger.error(error.message);
       return sendError(res, error);
+    }
+  }),
+
+  deleteReview: asyncWrapper(async (req: Request, res: Response) => {
+    try {
+      const reviewId = req.params.reviewId as string;
+
+      if (!reviewId) {
+        logger.error(messages.CANNOT_RETRIEVE_USER_DATA);
+        throw createHttpError(403, messages.CANNOT_RETRIEVE_USER_DATA);
+      }
+
+      const deletedReview = await contentReviewService.deleteContentReviewById(reviewId);
+
+      if (!deletedReview) {
+        logger.error(messages.UNABLE_UPDATE_USER);
+        return sendError(res, createHttpError(400, messages.UNABLE_UPDATE_USER));
+      }
+
+      return sendResponse(
+        res,
+        deletedReview,
+        200,
+      );
+    } catch (err) {
+      const error = err as Error;
+
+      logger.error(error.message);
+      return sendError(res, createHttpError(403, error));
     }
   }),
 };
