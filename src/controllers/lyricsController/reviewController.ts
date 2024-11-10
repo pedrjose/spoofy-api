@@ -103,14 +103,14 @@ const reviewController = {
 
   createReview: asyncWrapper(async (req: Request, res: Response) => {
     try {
-      const { musicId, image, url } = req.body
+      const { musicId, title, image, url } = req.body
       
       if (!musicId || !image || !url) {
         logger.error(messages.INVALID_BODY);
         throw createHttpError(400, messages.INVALID_BODY);
       }
 
-      const review = await contentReviewService.create(musicId, image, url);
+      const review = await contentReviewService.create(musicId, title, image, url);
 
       if (!review) {
         logger.error(messages.DATA_NOT_FOUND);

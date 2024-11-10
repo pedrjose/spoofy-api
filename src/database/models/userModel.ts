@@ -9,6 +9,7 @@ const PlaylistSchema: Schema = new Schema({
   playlistName: { type: String, required: true },
   playlistLyrics: [{ 
     musicId: { type: String, required: true, unique: true },
+    title: { type: String, required: true },
     image: { type: String, required: true },
     url: { type: String, required: true },
   }]

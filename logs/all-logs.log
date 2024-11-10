@@ -1166,3 +1166,19 @@
 [2024-11-10 05:45:45.712 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
 [2024-11-10 05:47:45.864 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-11-10 05:47:45.885 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-10 06:55:08.643 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-10 06:55:08.657 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-10 06:55:33.665 PM] [32minfo[39m: 	[32mGET /api/v1/lyrics/top 404 85 - 1.277 ms[39m
+[2024-11-10 07:00:13.387 PM] [32minfo[39m: 	[32mDELETE /api/v1/review/6730a0db6a98566df57bdb4b 404 85 - 0.673 ms[39m
+[2024-11-10 07:01:42.192 PM] [31merror[39m: 	[31muser 672636ef0f2684f14d003d3a attempted to access admin only route[39m
+[2024-11-10 07:02:22.127 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-10 07:02:22.143 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-10 07:02:33.690 PM] [31merror[39m: 	[31muser 672636ef0f2684f14d003d3a attempted to access admin only route[39m
+[2024-11-10 07:02:52.915 PM] [31merror[39m: 	[31muser 66fdc2a730c84320f67e349f attempted to access admin only route[39m
+[2024-11-10 07:02:54.368 PM] [31merror[39m: 	[31muser 66fdc2a730c84320f67e349f attempted to access admin only route[39m
+[2024-11-10 07:06:19.890 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-10 07:06:19.902 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-10 07:08:40.449 PM] [31merror[39m: 	[31mContentReview validation failed: title: Path `title` is required.[39m
+[2024-11-10 07:09:46.384 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-10 07:09:46.399 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-10 07:09:58.713 PM] [31merror[39m: 	[31mExisting Lyric Data[39m

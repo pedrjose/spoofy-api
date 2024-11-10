@@ -13,8 +13,9 @@ type ContentReviewDoc = Document<unknown, NonNullable<unknown>, IContentReview> 
     >;
 
 interface UpdateContentReviewParams {
-    id: string;
+    id: string,
     musicId?: string,
+    title?: string,
     image?: string,
     url?: string,
 }
@@ -23,6 +24,7 @@ const convertContentReviewDocToContentReview = (contentReviewDoc: ContentReviewD
     const contentReview: ContentReview = {
         id: contentReviewDoc._id.toString(),
         musicId: contentReviewDoc.musicId,
+        title: contentReviewDoc.title,
         image: contentReviewDoc.image,
         url: contentReviewDoc.url,
         views: contentReviewDoc.views,
@@ -37,11 +39,13 @@ const convertContentReviewDocToContentReview = (contentReviewDoc: ContentReviewD
 export const contentReviewService = {
     create: async (
         musicId: string,
+        title: string,
         image: string,
         url: string,
     ): Promise<ContentReview> => {
         const contentReviewDoc = await lyricReviewModel.create({
             musicId,
+            title,
             image,
             url,
         });
@@ -83,6 +87,7 @@ export const contentReviewService = {
     findAndUpdateContentReviewById: async ({
         id,
         musicId,
+        title,
         image,
         url,
     }: UpdateContentReviewParams) => {
@@ -90,6 +95,10 @@ export const contentReviewService = {
 
         if (musicId) {
             updateData.musicId = musicId;
+        }
+
+        if (title) {
+            updateData.title = title;
         }
 
         if (image) {

@@ -1,5 +1,6 @@
 export interface IContentReview extends Document {
     musicId: string;
+    title: string;
     image: string;
     url: string;
     views: number;
@@ -10,6 +11,7 @@ export interface IContentReview extends Document {
 
 export interface IContentReviewPlaylist {
     musicId: string;
+    title: string;
     image: string;
     url: string;
 }

@@ -53,6 +53,7 @@ router.delete(
   "/review/:reviewId",
   authVerifier.verifyAccessToken,
   authVerifier.adminOnly,
+  validators.validate,
   adminController.deleteReview,
 );
 
