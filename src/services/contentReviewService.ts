@@ -65,6 +65,21 @@ export const contentReviewService = {
         return contentReviewDoc.map(doc => convertContentReviewDocToContentReview(doc));
     },
 
+    findAllContentReviewWithPagination: async (page: number = 1, limit: number = 10) => {
+        const skip = (page - 1) * limit;
+    
+        const contentReviewDoc = await lyricReviewModel.find().skip(skip).limit(limit).exec();
+    
+        return contentReviewDoc.map(doc => convertContentReviewDocToContentReview(doc));
+    },
+    
+
+    findTop10ContentReview: async () => {
+        const contentReviewDoc = await lyricReviewModel.find().sort({ likes: -1, views: -1 }).limit(10).exec();
+
+        return contentReviewDoc.map(doc => convertContentReviewDocToContentReview(doc));
+    },
+
     findAndUpdateContentReviewById: async ({
         id,
         musicId,
@@ -111,17 +126,29 @@ export const contentReviewService = {
     incrementViews: async (id: string) => {
         const contentReviewDoc = await lyricReviewModel.findByIdAndUpdate(id, { $inc: { views: 1 } }, { new: true });
 
+        if (!contentReviewDoc) {
+            return null;
+        }
+
         return convertContentReviewDocToContentReview(contentReviewDoc);
     },
 
     incrementLikes: async (id: string) => {
         const contentReviewDoc = await lyricReviewModel.findByIdAndUpdate(id, { $inc: { likes: 1 } }, { new: true });
 
+        if (!contentReviewDoc) {
+            return null;
+        }
+
         return convertContentReviewDocToContentReview(contentReviewDoc);
     },
 
     incrementDislikes: async (id: string) => {
         const contentReviewDoc = await lyricReviewModel.findByIdAndUpdate(id, { $inc: { dislikes: 1 } }, { new: true });
+
+        if (!contentReviewDoc) {
+            return null;
+        }
 
         return convertContentReviewDocToContentReview(contentReviewDoc);
     },

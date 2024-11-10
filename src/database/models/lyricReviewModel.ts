@@ -1,10 +1,10 @@
 import mongoose, { Document, ObjectId } from "mongoose";
-import { IContentReview } from "../../interfaces/User";
+import { IContentReview } from "../../interfaces/ContentReview";
 
 const { Schema } = mongoose;
 
 const ContentReviewSchema = new Schema<IContentReview>({
-    musicId: { type: String, required: true },
+    musicId: { type: String, required: true, unique: true },
     image: { type: String, required: true },
     url: { type: String, required: true },
     views: { type: Number, default: 0 },

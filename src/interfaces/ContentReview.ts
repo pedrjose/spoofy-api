@@ -7,3 +7,9 @@ export interface IContentReview extends Document {
     dislikes: number;
     createdAt: Date;
 }
+
+export interface IContentReviewPlaylist {
+    musicId: string;
+    image: string;
+    url: string;
+}

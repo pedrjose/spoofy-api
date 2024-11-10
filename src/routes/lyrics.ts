@@ -11,13 +11,7 @@ router.get(
   authVerifier.verifyAccessToken,
   lyricsControllerIndex.lyrics.getLyrics,
 );
-/*
-router.get(
-  "/lyrics/top",
-  authVerifier.verifyAccessToken,
-  lyricsControllerIndex.lyrics.getTop10Lyrics,
-);
-*/
+
 router.delete(
   "/lyrics/:playlistId/:lyricId",
   authVerifier.verifyAccessToken,

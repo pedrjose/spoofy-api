@@ -5,6 +5,7 @@ import authRoutes from "./auth";
 import adminRoutes from "./admin";
 import lyricsRoutes from "./lyrics";
 import playlistRoutes from "./playlists";
+import reviewRoutes from "./review";
 
 
 
@@ -18,6 +19,8 @@ const routes = (app: Application) => {
   app.use(apiPrefix, lyricsRoutes);
 
   app.use(apiPrefix, playlistRoutes);
+
+  app.use(apiPrefix, reviewRoutes);
 
   app.use(`${apiPrefix}/admin`, adminRoutes);
 

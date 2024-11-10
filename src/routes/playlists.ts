@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { authVerifier } from "../middlewares/authVerificator";
-import { playlistController } from "../controllers";
+import { lyricsControllerIndex } from "../controllers";
 
 
 const router = Router();
@@ -8,25 +8,25 @@ const router = Router();
 router.get(
   "/playlists",
   authVerifier.verifyAccessToken,
-  playlistController.playlist.getPlaylists,
+  lyricsControllerIndex.playlist.getPlaylists,
 );
 
 router.post(
   "/playlist/:playlistName",
   authVerifier.verifyAccessToken,
-  playlistController.playlist.createPlaylist,
+  lyricsControllerIndex.playlist.createPlaylist,
 );
 
 router.patch(
   "/playlist/lyrics",
   authVerifier.verifyAccessToken,
-  playlistController.playlist.updateLyricToPlaylist,
+  lyricsControllerIndex.playlist.updateLyricToPlaylist,
 );
 
 router.delete(
   "/playlist/:playlistId",
   authVerifier.verifyAccessToken,
-  playlistController.playlist.deletePlaylist,
+  lyricsControllerIndex.playlist.deletePlaylist,
 );
 
 export default router;

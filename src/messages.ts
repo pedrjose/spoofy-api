@@ -22,4 +22,5 @@ export const messages = {
   UNABLE_RETRIEVE_DATA: "Unable to retrieve data",
   INVALID_BODY: "Invalid request body",
   UPLOAD_FAILED: "Upload Failed",
+  EXISTING_REVIEW_LYRIC: "Existing Lyric Data"
 };

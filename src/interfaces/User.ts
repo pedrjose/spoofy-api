@@ -1,5 +1,6 @@
 import { UserRoles } from "../types";
 import { ObjectId } from "mongoose";
+import { IContentReview, IContentReviewPlaylist } from './ContentReview';
 
 export interface IUserModel extends Document {
   name: string;
@@ -21,16 +22,8 @@ export interface ILogin {
   password: string;
 }
 
-export interface ILyric {
-  artist: string;
-  musicName: string;
-  musicLyric: string;
-  translate: string;
-  badwords: boolean;
-}
-
 export interface IPlaylist{
   playlistName: string;
-  playlistLyrics: ILyric[];
+  playlistLyrics: IContentReviewPlaylist[];
 }
 
