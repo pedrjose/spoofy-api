@@ -7,7 +7,7 @@ import { asyncWrapper } from "./utils/asyncWrapper";
 import { Error } from "../types";
 import { messages } from "../messages";
 import { userService } from "../services/userService";
-import { contentReviewService } from "services/contentReviewService";
+import { contentReviewService } from "../services/contentReviewService";
 
 const adminController = {
   createAccount: asyncWrapper(async (req: Request, res: Response) => {

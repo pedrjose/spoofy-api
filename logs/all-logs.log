@@ -1138,3 +1138,5 @@
 [2024-11-10 02:19:15.929 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
 [2024-11-10 02:20:38.280 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-11-10 02:20:38.292 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-10 02:51:33.680 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-10 02:51:33.691 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
