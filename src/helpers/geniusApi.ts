@@ -1,7 +1,10 @@
 /// <reference path="../types/genius.d.ts" />
 import { getSong, getSongById } from 'genius-lyrics-api';
+import { ILyricReturn } from 'interfaces/ContentReview';
 
 import { config } from "../config";
+
+
 
 export const geniusRequest = async (music: string, artist: string) => {
     try {
@@ -12,7 +15,7 @@ export const geniusRequest = async (music: string, artist: string) => {
             optimizeQuery: true
         };
 
-        const lyric = await getSong(options);
+        const lyric : ILyricReturn | null  = await getSong(options);
         
         return lyric;
     } catch (err) {
@@ -34,7 +37,7 @@ export const geniusRequestById = async (lyricId: string) => {
             apiKey: config.GeniusApiKey
         };
 
-        const lyric = await getSongById(lyricId, config.GeniusApiKey);
+        const lyric : ILyricReturn | null = await getSongById(lyricId, config.GeniusApiKey);
         
         return lyric;
     } catch (err) {

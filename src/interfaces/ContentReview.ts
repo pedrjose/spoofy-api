@@ -15,3 +15,17 @@ export interface IContentReviewPlaylist {
     image: string;
     url: string;
 }
+
+export interface ILyricReturn {
+    id: number,
+    title: string,
+    lyrics: string,
+    url: string,
+    albumArt: string,
+}
+
+export interface IGeniusError {
+    success: boolean;
+    message: string;
+    error: string | Error;
+}

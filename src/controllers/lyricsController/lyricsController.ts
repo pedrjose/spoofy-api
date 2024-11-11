@@ -5,6 +5,7 @@ import { asyncWrapper } from "../utils/asyncWrapper";
 import { logger, sendError, sendResponse, geniusRequest, geniusRequestById} from "../../helpers";
 import { messages } from "../../messages";
 import { userService } from "../../services/userService";
+import { ILyricReturn, IGeniusError } from "interfaces/ContentReview";
 
 const lyricsController = {
   getLyrics: asyncWrapper(async (req: Request, res: Response) => {
@@ -16,13 +17,15 @@ const lyricsController = {
         logger.error(messages.INVALID_BODY);
         throw createHttpError(400, messages.INVALID_BODY);
       }
+      
+      let lyric: ILyricReturn | IGeniusError | null = await geniusRequest(music, artist);
 
-      const lyric = await geniusRequest(music, artist);
-
-      if (!lyric) {
+      if (!lyric || "success" in lyric) {
         logger.error(messages.DATA_NOT_FOUND);
         throw createHttpError(500, messages.DATA_NOT_FOUND);
       }
+
+      lyric.lyrics = lyric.lyrics.replace(/\[.*?\]/g, '').trim();
 
       return sendResponse(
         res,
@@ -46,12 +49,14 @@ const lyricsController = {
         throw createHttpError(400, messages.INVALID_BODY);
       }
 
-      const lyric = await geniusRequestById(lyricId);
+      let lyric: ILyricReturn | IGeniusError | null = await geniusRequestById(lyricId);
 
-      if (!lyric) {
+      if (!lyric || "success" in lyric) {
         logger.error(messages.DATA_NOT_FOUND);
         throw createHttpError(500, messages.DATA_NOT_FOUND);
       }
+
+      lyric.lyrics = lyric.lyrics.replace(/\[.*?\]/g, '').trim();
 
       return sendResponse(
         res,
