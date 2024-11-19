@@ -1198,3 +1198,34 @@
 [2024-11-10 09:22:53.052 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
 [2024-11-10 09:23:29.793 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-11-10 09:23:29.803 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-13 04:20:53.769 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-13 04:20:54.629 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-11-13 04:20:56.679 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-11-13 04:20:58.785 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-11-13 04:21:00.924 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-11-13 04:21:03.109 PM] [31merror[39m: 	[31mRedis Client Error getaddrinfo ENOTFOUND redis[39m
+[2024-11-13 04:21:26.719 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-13 04:21:26.731 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-13 05:05:38.749 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:05:38.752 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:05:41.569 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:05:41.570 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:05:50.386 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:05:50.387 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:06:16.531 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:06:16.532 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:07:44.774 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:07:44.775 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-13 05:09:18.914 PM] [31merror[39m: 	[31m[ { message: 'Passwords do not match' } ][39m
+[2024-11-13 05:11:06.057 PM] [31merror[39m: 	[31mExisting Lyric Data[39m
+[2024-11-13 05:16:11.029 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-13 05:17:04.636 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-13 05:22:53.063 PM] [31merror[39m: 	[31m[ { message: 'Passwords do not match' } ][39m
+[2024-11-13 05:23:11.454 PM] [31merror[39m: 	[31mUnable to delete user data[39m
+[2024-11-13 05:24:01.739 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-13 05:24:29.976 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-13 09:21:59.015 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 08:18:04.759 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 08:18:04.771 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:04:51.835 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:04:51.850 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m

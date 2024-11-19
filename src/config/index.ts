@@ -16,12 +16,12 @@ export const config = {
     cookieDomain: "localhost",
 
     // database
-    databaseUrl: "mongodb://authusers:123456@mongo:27017/authusers",
-    databaseUser: "authusers",
+    databaseUrl: "mongodb://spoofy:123456@mongo:27017/spoofy",
+    databaseUser: "spoofy",
     databasePassword: "123456",
 
     // redis
-    redisUrl: "redis://localhost:6379",
+    redisUrl: "redis://redis:6379",
 
     // vagalume
     GeniusApiKey: "sv0ho3jVEkFFmnwuXH8qJu5lsGggcoaiB89NQXQ208VJ5DSZIEQ445BEzJ2Ya3VS",

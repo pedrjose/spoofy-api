@@ -22,7 +22,7 @@ export interface ILogin {
   password: string;
 }
 
-export interface IPlaylist{
+export interface IPlaylist {
   playlistName: string;
   playlistLyrics: IContentReviewPlaylist[];
 }

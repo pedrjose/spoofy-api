@@ -98,7 +98,7 @@ export const userService = {
         photo,
         myPlaylists,
     }: UpdateUserParams) => {
-        const updateData: { [key: string]: string | Array<IPlaylist> } = {};
+        const updateData: { [key: string]: string | Array<IPlaylist> | any } = {};
 
         if (name) {
             updateData.name = name;
@@ -117,7 +117,7 @@ export const userService = {
         }
 
         if (myPlaylists) {
-            updateData.myPlaylists = myPlaylists;
+            updateData.$push = { myPlaylists: { $each: myPlaylists } };
         }
 
         if (name || email || password || photo || myPlaylists) {
