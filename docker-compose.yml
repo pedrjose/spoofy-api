@@ -18,8 +18,6 @@ services:
     container_name: mongo
     restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: admin
       MONGO_INITDB_DATABASE: spoofy-database
     volumes:
       - mongodb:/data/db

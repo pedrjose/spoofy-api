@@ -4,6 +4,7 @@ export const messages = {
   APP_SERVER_ERROR: "Oops, something went wrong!",
   NOT_FOUND: `Not Found. Try using /api/${config.API_VERSION} to access the api resource`,
   RESOURCE_NOT_FOUND: "No resource(s) found",
+  DATA_NOT_FOUND: "No data found!",
   ACCESS_DENIED: "Access denied!",
   SUCCESS_LOGIN: "Successful Login!",
   SUCCESS_LOGOUT: "Successful Logout!",
@@ -21,4 +22,5 @@ export const messages = {
   UNABLE_RETRIEVE_DATA: "Unable to retrieve data",
   INVALID_BODY: "Invalid request body",
   UPLOAD_FAILED: "Upload Failed",
+  EXISTING_REVIEW_LYRIC: "Existing Lyric Data"
 };

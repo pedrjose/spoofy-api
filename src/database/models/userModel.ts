@@ -1,49 +1,27 @@
 import mongoose, { Document } from "mongoose";
-import { IUserModel } from "../../interfaces/User";
+import { IUserModel, IPlaylist } from '../../interfaces/User';
 import { Schema } from "mongoose";
 import userTokenModel from "./userTokenModel";
-
 import { USER_ROLES } from "../../types";
 
 const PlaylistSchema: Schema = new Schema({
   playlistId: { type: String, required: true },
   playlistName: { type: String, required: true },
   playlistLyrics: [{ 
-    artist: { type: String, required: true },
-    musicName: { type: String, required: true },
-    musicLyric: { type: String, required: true },
-    translate: { type: String, required: true },
-    badwords: { type: Boolean, required: true },
+    musicId: { type: String, required: true, unique: true },
+    title: { type: String, required: true },
+    image: { type: String, required: true },
+    url: { type: String, required: true },
   }]
 });
 
 const UserSchema: Schema = new Schema<IUserModel>({
-  name: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    select: false
-  },
-  role: {
-    type: String,
-    required: true,
-    enum: USER_ROLES,
-  },
-  photo: {
-    type: String,
-  },
-  myPlaylists: {
-    type: [PlaylistSchema],
-    required: true
-  }
+  name: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true, select: false },
+  role: { type: String, required: true, enum: USER_ROLES },
+  photo: { type: String },
+  myPlaylists: { type: [PlaylistSchema], required: true }
 });
 
 UserSchema.pre("findOneAndDelete", { document: true, query: true }, function middleware(next) {

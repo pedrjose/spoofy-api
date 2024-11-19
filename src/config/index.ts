@@ -16,15 +16,15 @@ export const config = {
     cookieDomain: "localhost",
 
     // database
-    databaseUrl: "mongodb://authusers:123456@mongo:27017/authusers",
-    databaseUser: "authusers",
+    databaseUrl: "mongodb://spoofy:123456@mongo:27017/spoofy",
+    databaseUser: "spoofy",
     databasePassword: "123456",
 
     // redis
-    redisUrl: "redis://localhost:6379",
+    redisUrl: "redis://redis:6379",
 
     // vagalume
-    vagalumeApiKey: "33f41a11054da7ad14a5a6e156034364",
+    GeniusApiKey: "sv0ho3jVEkFFmnwuXH8qJu5lsGggcoaiB89NQXQ208VJ5DSZIEQ445BEzJ2Ya3VS",
 
     //Cloudinary
     CloudinaryCloudName: "dgewhwiee",
@@ -56,7 +56,7 @@ export const loadConfigVariables = () => {
     config.databasePassword = env("DATABASE_PASSWORD", config.databasePassword) as string;
 
     // vagalume config
-    config.vagalumeApiKey = env("VAGALUME_API_KEY", config.vagalumeApiKey) as string;
+    config.GeniusApiKey = env("GENIUS_API_KEY", config.GeniusApiKey) as string;
 
     // cloudinary config
     config.CloudinaryCloudName = env("CLOUDINARY_CLOUD_NAME", config.CloudinaryCloudName) as string;

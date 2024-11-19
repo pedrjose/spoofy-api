@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import createHttpError from "http-errors";
 
 import { hashPassword, logger, sendError, sendResponse } from "../../helpers";
-import { IPlaylist } from "../../interfaces/User";
+import { IContentReview } from "interfaces/ContentReview";
 import { messages } from "../../messages";
 import { userService } from "../../services/userService";
 import { asyncWrapper } from "../utils/asyncWrapper";
@@ -20,7 +20,7 @@ const registerController = asyncWrapper(async (req: Request, res: Response) => {
 
     const hash = await hashPassword(password);
 
-    const myPlaylists: IPlaylist[] = [];
+    const myPlaylists: IContentReview[] = [];
 
     await userService.create(name, email, hash, "user", photo || "", myPlaylists);
 

@@ -2,15 +2,15 @@ import { Request, Response } from "express";
 import createHttpError from "http-errors";
 
 import { asyncWrapper } from "../utils/asyncWrapper";
-import { logger, sendError, sendResponse, vagalumeRequest} from "../../helpers";
+import { logger, sendError, sendResponse } from "../../helpers";
 import { userService } from "../../services/userService";
 import { messages } from "../../messages";
-import { ILyric } from "../../interfaces/User";
+import { IContentReviewPlaylist } from "interfaces/ContentReview";
 
 
 interface LyricsBody {
   playlistId: string;
-  lyrics: ILyric[];
+  lyrics: IContentReviewPlaylist[];
 }
 
 const playlistController = {

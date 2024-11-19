@@ -1,7 +1,8 @@
 import { Document, Types } from "mongoose";
 
 import userModel from "../database/models/userModel";
-import { IPlaylist, IUserModel, ILyric } from "../interfaces/User";
+import { IUserModel, IPlaylist } from "../interfaces/User";
+import { IContentReview, IContentReviewPlaylist } from "interfaces/ContentReview";
 import { User, UserRoles } from "../types";
 
 type UserDoc = Document<unknown, NonNullable<unknown>, IUserModel> &
@@ -24,7 +25,7 @@ interface UpdateUserParams {
 interface AddLyricToPlaylistParams {
     id: string;
     playlistId: string;
-    lyrics: ILyric[];
+    lyrics: IContentReviewPlaylist[];
 }
 
 const convertUserDocToUser = (userDoc: UserDoc) => {
@@ -49,7 +50,7 @@ export const userService = {
         hashPassword: string,
         role: UserRoles,
         photo: string,
-        myPlaylists: Array<IPlaylist>,
+        myPlaylists: Array<IContentReview>,
     ): Promise<User> => {
         const userDoc = await userModel.create({
             name,
@@ -97,7 +98,7 @@ export const userService = {
         photo,
         myPlaylists,
     }: UpdateUserParams) => {
-        const updateData: { [key: string]: string | Array<IPlaylist> } = {};
+        const updateData: { [key: string]: string | Array<IPlaylist> | any } = {};
 
         if (name) {
             updateData.name = name;
@@ -116,7 +117,7 @@ export const userService = {
         }
 
         if (myPlaylists) {
-            updateData.myPlaylists = myPlaylists;
+            updateData.$push = { myPlaylists: { $each: myPlaylists } };
         }
 
         if (name || email || password || photo || myPlaylists) {

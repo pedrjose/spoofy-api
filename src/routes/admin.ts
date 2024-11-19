@@ -6,15 +6,6 @@ import { validators } from "../middlewares/validators";
 
 const router = Router();
 
-router.post(
-  "/createAccount",
-  authVerifier.verifyAccessToken,
-  authVerifier.adminOnly,
-  validators.createAccountValidationRules,
-  validators.validate,
-  adminController.createAccount,
-);
-
 router.get(
   "/user/:userId",
   authVerifier.verifyAccessToken,
@@ -22,6 +13,22 @@ router.get(
   validators.userIdValidationRule,
   validators.validate,
   adminController.getUser,
+);
+
+router.get(
+  "/users",
+  authVerifier.verifyAccessToken,
+  authVerifier.adminOnly,
+  adminController.getAllUsers,
+);
+
+router.post(
+  "/createAccount",
+  authVerifier.verifyAccessToken,
+  authVerifier.adminOnly,
+  validators.createAccountValidationRules,
+  validators.validate,
+  adminController.createAccount,
 );
 
 router.patch(
@@ -42,11 +49,12 @@ router.delete(
   adminController.deleteUser,
 );
 
-router.get(
-  "/users",
+router.delete(
+  "/review/:reviewId",
   authVerifier.verifyAccessToken,
   authVerifier.adminOnly,
-  adminController.getAllUsers,
+  validators.validate,
+  adminController.deleteReview,
 );
 
 export default router;
