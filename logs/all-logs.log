@@ -1229,3 +1229,148 @@
 [2024-11-18 08:18:04.771 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
 [2024-11-18 09:04:51.835 PM] [32minfo[39m: 	[32mRedis client connected[39m
 [2024-11-18 09:04:51.850 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:18:11.449 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:18:11.460 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:18:32.268 PM] [31merror[39m: 	[31mUnable to retrieve user data[39m
+[2024-11-18 09:19:59.131 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:19:59.151 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:20:10.898 PM] [32minfo[39m: 	[32mGET /api/v1/admin/user/ 404 85 - 0.942 ms[39m
+[2024-11-18 09:22:00.665 PM] [31merror[39m: 	[31mUnable to delete user data[39m
+[2024-11-18 09:22:10.304 PM] [31merror[39m: 	[31mUnable to retrieve user data[39m
+[2024-11-18 09:22:13.793 PM] [31merror[39m: 	[31mUnable to retrieve user data[39m
+[2024-11-18 09:22:28.680 PM] [31merror[39m: 	[31mUnable to retrieve user data[39m
+[2024-11-18 09:23:40.757 PM] [31merror[39m: 	[31mUnable to delete user data[39m
+[2024-11-18 09:23:51.298 PM] [31merror[39m: 	[31mUnable to retrieve user data[39m
+[2024-11-18 09:31:16.434 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:31:16.445 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:31:30.921 PM] [31merror[39m: 	[31mUnable to delete user data[39m
+[2024-11-18 09:34:12.152 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:34:12.163 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:34:24.322 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:34:24.333 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:34:40.484 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:35:11.075 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:37:06.321 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:37:59.157 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:41:16.793 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:41:16.805 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:41:26.403 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:42:46.283 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:42:46.294 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:42:55.822 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:43:44.226 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:44:30.515 PM] [31merror[39m: 	[31m[ { message: "'name' is required and must exceed 5 characters" } ][39m
+[2024-11-18 09:44:41.679 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:46:39.373 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:46:39.383 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:46:42.278 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:47:18.634 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:47:18.646 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:48:14.314 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:48:14.327 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:48:28.881 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:50:34.243 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:50:34.254 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:51:02.942 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:51:02.955 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:51:07.826 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:51:30.678 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:51:30.692 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:51:31.739 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:51:43.684 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:51:43.695 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:52:09.726 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:52:09.738 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:53:30.295 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:53:30.307 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:55:57.606 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:55:57.617 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:56:00.539 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 09:57:14.684 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 09:57:14.696 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 09:57:36.341 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:00:16.487 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:00:16.497 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:01:53.387 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:01:53.397 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:02:13.824 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:02:13.836 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:02:54.761 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:03:59.529 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:03:59.541 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:04:02.202 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:11:37.127 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-18 10:12:15.680 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:12:25.140 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:12:57.270 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:12:57.280 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:13:02.665 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:13:11.298 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:13:11.309 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:13:17.068 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:13:17.079 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:16:02.903 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-18 10:16:02.915 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-18 10:16:07.170 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-18 10:16:23.670 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:43:02.609 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:43:02.623 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 09:43:21.922 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:46:46.996 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:46:47.006 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 09:46:50.536 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:47:03.421 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:47:03.431 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 09:50:31.335 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:50:31.346 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 09:50:40.963 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:51:10.940 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:51:10.953 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 09:51:12.367 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:51:43.280 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 09:51:43.293 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 09:51:45.014 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:51:47.767 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:52:38.469 PM] [31merror[39m: 	[31mYou cannot delete your own user[39m
+[2024-11-19 09:52:54.537 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:55:46.033 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:55:48.215 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:55:48.875 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 09:55:51.848 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 10:11:59.090 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:11:59.101 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 10:12:24.909 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 10:14:36.601 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:14:36.613 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 10:14:40.160 PM] [31merror[39m: 	[31mE11000 duplicate key error collection: spoofy.users index: myPlaylists.playlistLyrics.musicId_1 dup key: { myPlaylists.playlistLyrics.musicId: null }[39m
+[2024-11-19 10:14:57.800 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:14:57.816 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://localhost:27017/spoofy[39m
+[2024-11-19 10:17:08.574 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:17:38.579 PM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-11-19 10:17:38.580 PM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-11-19 10:18:08.572 PM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-11-19 10:29:48.907 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:30:18.934 PM] [31merror[39m: 	[31mconnection timed out[39m
+[2024-11-19 10:30:18.935 PM] [31merror[39m: 	[31mconnection timed out[39m
+[2024-11-19 10:30:47.945 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:31:17.971 PM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-11-19 10:31:17.972 PM] [31merror[39m: 	[31mconnect ECONNREFUSED 127.0.0.1:27017[39m
+[2024-11-19 10:31:43.463 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:32:13.491 PM] [31merror[39m: 	[31mconnection timed out[39m
+[2024-11-19 10:32:13.492 PM] [31merror[39m: 	[31mconnection timed out[39m
+[2024-11-19 10:32:43.510 PM] [31merror[39m: 	[31mconnection timed out[39m
+[2024-11-19 10:35:50.506 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:35:50.544 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-19 10:48:24.897 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-19 10:48:24.953 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-19 10:48:33.083 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-19 10:48:33.084 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-19 10:48:54.167 PM] [33mwarn[39m: 	[33mThe refresh token sent from 673d3d15f84180b084b0d83b could be used in another device. All devices were signed out[39m
+[2024-11-19 10:49:35.885 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-20 01:00:43.750 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-20 01:00:43.787 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-20 01:14:02.271 PM] [31merror[39m: 	[31mExisting Lyric Data[39m
+[2024-11-20 01:15:07.532 PM] [31merror[39m: 	[31mExisting Lyric Data[39m
+[2024-11-20 01:18:21.194 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-20 01:18:34.850 PM] [31merror[39m: 	[31mNo data found![39m
+[2024-11-20 01:18:34.850 PM] [31merror[39m: 	[31mNo data found![39m

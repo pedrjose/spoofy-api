@@ -8,6 +8,8 @@ import { Error } from "../types";
 import { messages } from "../messages";
 import { userService } from "../services/userService";
 import { contentReviewService } from "../services/contentReviewService";
+import { IContentReviewPlaylist } from "interfaces/ContentReview";
+import { IPlaylist } from "interfaces/User";
 
 const adminController = {
   createAccount: asyncWrapper(async (req: Request, res: Response) => {
@@ -23,7 +25,9 @@ const adminController = {
 
       const hash = await hashPassword(password);
 
-      await userService.create(name, email, hash, role, photo, []);
+      const myPlaylists: IPlaylist[] = [];
+
+      await userService.create(name, email, hash, role, photo, myPlaylists);
 
       return sendResponse(res, messages.ACCOUNT_CREATED, 201);
     } catch (err) {
@@ -119,6 +123,8 @@ const adminController = {
       }
 
       const deletedUser = await userService.deleteUserById(userId);
+
+      console.log(deletedUser)
 
       if (!deletedUser) {
         logger.error(messages.UNABLE_DELETE_USER);

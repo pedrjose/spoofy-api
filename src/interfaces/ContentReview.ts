@@ -10,7 +10,7 @@ export interface IContentReview extends Document {
 }
 
 export interface IContentReviewPlaylist {
-    musicId: string;
+    musicReviewId: string;
     title: string;
     image: string;
     url: string;

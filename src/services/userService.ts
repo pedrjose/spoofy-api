@@ -50,7 +50,7 @@ export const userService = {
         hashPassword: string,
         role: UserRoles,
         photo: string,
-        myPlaylists: Array<IContentReview>,
+        myPlaylists: Array<IPlaylist>,
     ): Promise<User> => {
         const userDoc = await userModel.create({
             name,
