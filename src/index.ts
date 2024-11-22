@@ -17,20 +17,22 @@ import routes from "./routes";
 
 loadConfigVariables();
 
-const allowedList = [
-  "http://localhost:3000",
-  "http://localhost:8000",
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://divine-pangolin-monthly.ngrok-free.app",
 ];
 
 const corsOptions: CorsOptions = {
   credentials: true,
-  origin: (origin: any, callback: any) => {
-    if (allowedList.includes(origin ?? "") || !origin) {
-      callback(null, true);
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, origin);
     } else {
       callback(new Error("Not allowed by CORS"));
     }
   },
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Accept"],
 };
 
 (async () => {
@@ -40,12 +42,14 @@ const corsOptions: CorsOptions = {
     const port = parseInt(process.env.PORT ?? "0", 10) || 3000;
     const app = express();
 
+    app.use(cors(corsOptions));
+
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
 
     app.use(cookieParser());
 
-    app.use(cors(corsOptions));
+    app.options("*", cors(corsOptions));
     
     app.use(helmet());
 

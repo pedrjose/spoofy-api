@@ -101,40 +101,6 @@ const reviewController = {
     }
   }),
 
-  createReview: asyncWrapper(async (req: Request, res: Response) => {
-    try {
-      const { musicId, title, image, url } = req.body
-      
-      if (!musicId || !image || !url) {
-        logger.error(messages.INVALID_BODY);
-        throw createHttpError(400, messages.INVALID_BODY);
-      }
-
-      const review = await contentReviewService.create(musicId, title, image, url);
-
-      if (!review) {
-        logger.error(messages.DATA_NOT_FOUND);
-        throw createHttpError(500, messages.DATA_NOT_FOUND);
-      }
-
-      return sendResponse(
-        res,
-        review,
-        200,
-      );
-    } catch (err) {
-      const error = err as Error;
-
-      if (err instanceof Error && 'code' in err && (err as any).code === 11000) {
-        logger.error(messages.EXISTING_REVIEW_LYRIC);
-        return sendError(res, createHttpError(409, messages.EXISTING_REVIEW_LYRIC));
-      }
-
-      logger.error(error.message);
-      return sendError(res, createHttpError(403, error));
-    }
-  }),
-
   incrementViewsToReviews: asyncWrapper(async (req: Request, res: Response) => {
     try {
       const { reviewId } = req.params;

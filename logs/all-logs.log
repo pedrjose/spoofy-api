@@ -1374,3 +1374,201 @@
 [2024-11-20 01:18:21.194 PM] [31merror[39m: 	[31mUnable to update user data[39m
 [2024-11-20 01:18:34.850 PM] [31merror[39m: 	[31mNo data found![39m
 [2024-11-20 01:18:34.850 PM] [31merror[39m: 	[31mNo data found![39m
+[2024-11-20 01:29:03.149 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-20 01:29:03.182 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-20 01:29:17.185 PM] [32minfo[39m: 	[32mPOST /api/v1/review 404 85 - 1.543 ms[39m
+[2024-11-20 01:51:05.823 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-20 01:51:05.857 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-20 01:55:46.475 PM] [31merror[39m: 	[31mUnable to update user data[39m
+[2024-11-20 04:42:58.727 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-20 04:42:58.769 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-20 04:45:41.353 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 07:22:56.739 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 07:22:56.784 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 07:24:02.045 PM] [32minfo[39m: 	[32mGET / 404 85 - 2.477 ms[39m
+[2024-11-21 07:26:57.760 PM] [32minfo[39m: 	[32mPOST /login 404 85 - 0.321 ms[39m
+[2024-11-21 07:28:16.435 PM] [32minfo[39m: 	[32mGET /api/v1/login 404 85 - 0.386 ms[39m
+[2024-11-21 07:33:18.137 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 07:33:18.138 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 07:43:51.733 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 07:43:51.766 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 07:44:33.477 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 07:44:33.479 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 07:48:21.622 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 07:48:21.652 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 07:50:09.912 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 07:50:09.913 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 07:58:28.429 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 07:58:28.463 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 07:59:56.608 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 07:59:56.637 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:00:29.379 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 08:00:29.380 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 08:13:02.132 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:13:02.163 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:13:28.255 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:13:28.288 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:14:25.827 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:14:25.856 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:14:56.257 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:14:56.288 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:17:41.122 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:17:41.153 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:19:32.148 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:19:32.177 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:19:58.197 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:19:58.230 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:20:08.153 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:20:08.183 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:20:32.040 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:20:32.073 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:21:20.180 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:21:20.209 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:21:34.053 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:21:34.082 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:23:52.498 PM] [32minfo[39m: 	[32mPOST /login 404 85 - 1.541 ms[39m
+[2024-11-21 08:26:36.199 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:26:36.227 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:27:55.647 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:27:55.696 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:28:01.210 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:28:01.241 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:29:14.099 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:29:14.144 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:31:12.620 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:31:12.655 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:31:21.852 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:31:21.882 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:31:59.241 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:31:59.273 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:32:34.265 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:32:34.297 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:34:22.890 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:34:22.923 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:36:41.728 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:36:41.757 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:38:36.335 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:38:36.365 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:38:49.232 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:38:49.269 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:41:41.630 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:41:41.675 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:42:07.284 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:42:07.326 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:44:05.498 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:44:05.526 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:44:37.262 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:44:37.294 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:44:48.208 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:44:48.237 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:48:58.343 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:48:58.372 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:49:11.083 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:49:11.111 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:50:44.646 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:50:44.675 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:50:54.711 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:50:54.738 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:56:48.063 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:56:48.091 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 08:59:23.356 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 08:59:23.387 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:00:38.168 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:00:38.198 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:00:59.125 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:00:59.159 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:01:10.292 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:01:10.322 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:01:41.881 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:01:41.909 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:03:19.758 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:03:19.788 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:03:35.762 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:03:35.792 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:06:03.528 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:06:03.560 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:06:24.733 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:06:24.770 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:07:48.540 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:07:48.570 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:15:59.114 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:15:59.148 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:16:11.144 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:16:11.188 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:16:22.441 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:16:22.480 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:16:36.672 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:16:36.702 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:16:44.644 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:16:44.675 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:17:38.159 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:17:38.187 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:17:53.218 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:17:53.249 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:18:12.191 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:18:12.218 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:19:04.492 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:19:04.525 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:19:17.097 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:19:17.127 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:20:29.752 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:20:29.781 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:20:52.051 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:20:52.084 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:21:01.312 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:21:01.338 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:23:37.281 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:23:37.311 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:23:50.569 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:23:50.618 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:24:36.753 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:24:36.787 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:25:59.684 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 09:25:59.685 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 09:30:36.925 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:30:36.954 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:30:51.931 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:30:51.960 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:32:03.577 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:32:03.604 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:32:24.008 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:32:24.041 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:32:42.316 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:32:42.343 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:33:03.834 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:33:03.863 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:33:22.233 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:33:22.264 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:35:11.876 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:35:11.907 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:35:43.444 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:35:43.495 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:36:21.423 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:36:21.454 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:37:28.569 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:37:28.598 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:37:50.207 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:37:50.235 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:38:50.348 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:38:50.377 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:41:52.238 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:41:52.266 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:42:27.770 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:42:27.798 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:44:19.265 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-21 09:44:19.294 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m
+[2024-11-21 09:51:53.385 PM] [32minfo[39m: 	[32mGET /reviews/top 404 85 - 2.388 ms[39m
+[2024-11-21 09:51:53.395 PM] [32minfo[39m: 	[32mGET /playlists 404 85 - 0.423 ms[39m
+[2024-11-21 09:51:59.357 PM] [32minfo[39m: 	[32mGET /reviews/top 404 85 - 0.315 ms[39m
+[2024-11-21 09:51:59.383 PM] [32minfo[39m: 	[32mGET /playlists 404 85 - 0.287 ms[39m
+[2024-11-21 09:52:03.268 PM] [32minfo[39m: 	[32mGET /reviews/top 404 85 - 0.374 ms[39m
+[2024-11-21 09:52:03.290 PM] [32minfo[39m: 	[32mGET /playlists 404 85 - 0.315 ms[39m
+[2024-11-21 09:52:19.747 PM] [32minfo[39m: 	[32mGET /playlists 404 85 - 0.304 ms[39m
+[2024-11-21 09:52:19.751 PM] [32minfo[39m: 	[32mGET /reviews/top 404 85 - 0.249 ms[39m
+[2024-11-21 09:52:38.188 PM] [32minfo[39m: 	[32mGET /reviews/top 404 85 - 0.468 ms[39m
+[2024-11-21 09:52:38.191 PM] [32minfo[39m: 	[32mGET /playlists 404 85 - 0.374 ms[39m
+[2024-11-21 10:31:50.001 PM] [32minfo[39m: 	[32mGET / 404 85 - 0.517 ms[39m
+[2024-11-21 10:39:08.762 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-21 10:39:08.763 PM] [31merror[39m: 	[31mInvalid email or password[39m
+[2024-11-22 04:26:18.093 PM] [32minfo[39m: 	[32mRedis client connected[39m
+[2024-11-22 04:26:18.135 PM] [32minfo[39m: 	[32mMongoDB connected to mongodb://admin:secret@localhost:27017[39m

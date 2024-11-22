@@ -12,8 +12,6 @@ router.get("/reviews/top", authVerifier.verifyAccessToken, lyricsControllerIndex
 
 router.get("/review/:reviewId", authVerifier.verifyAccessToken, lyricsControllerIndex.reviews.getReviewById);
 
-router.post("/review", authVerifier.verifyAccessToken, lyricsControllerIndex.reviews.createReview);
-
 router.post("/review/views/:reviewId", authVerifier.verifyRefreshToken, lyricsControllerIndex.reviews.incrementViewsToReviews);
 
 router.post("/review/like/:reviewId", authVerifier.verifyAccessToken, lyricsControllerIndex.reviews.incrementLikesToReviews);

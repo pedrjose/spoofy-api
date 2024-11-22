@@ -31,6 +31,13 @@ router.post(
   adminController.createAccount,
 );
 
+router.post(
+  "/review",
+  authVerifier.verifyAccessToken, 
+  authVerifier.adminOnly,
+  adminController.createReview,
+);
+
 router.patch(
   "/user/:userId",
   authVerifier.verifyAccessToken,

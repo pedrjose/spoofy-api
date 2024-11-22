@@ -4,7 +4,6 @@ import createHttpError from "http-errors";
 import { hashPassword, logger, sendError, sendResponse } from "../helpers";
 import { asyncWrapper } from "./utils/asyncWrapper";
 
-import { Error } from "../types";
 import { messages } from "../messages";
 import { userService } from "../services/userService";
 import { contentReviewService } from "../services/contentReviewService";
@@ -124,8 +123,6 @@ const adminController = {
 
       const deletedUser = await userService.deleteUserById(userId);
 
-      console.log(deletedUser)
-
       if (!deletedUser) {
         logger.error(messages.UNABLE_DELETE_USER);
         return sendError(res, createHttpError(400, messages.UNABLE_DELETE_USER));
@@ -133,14 +130,7 @@ const adminController = {
 
       return sendResponse(
         res,
-        {
-          id: deletedUser.id,
-          name: deletedUser.name,
-          email: deletedUser.email,
-          role: deletedUser.role,
-          photo: deletedUser.photo,
-          myPlaylists: deletedUser.myPlaylists,
-        },
+        "Delete Successful",
         200,
       );
     } catch (err) {
@@ -175,6 +165,40 @@ const adminController = {
     }
   }),
 
+  createReview: asyncWrapper(async (req: Request, res: Response) => {
+    try {
+      const { musicId, title, image, url } = req.body
+      
+      if (!musicId || !image || !url) {
+        logger.error(messages.INVALID_BODY);
+        throw createHttpError(400, messages.INVALID_BODY);
+      }
+
+      const review = await contentReviewService.create(musicId, title, image, url);
+
+      if (!review) {
+        logger.error(messages.DATA_NOT_FOUND);
+        throw createHttpError(500, messages.DATA_NOT_FOUND);
+      }
+
+      return sendResponse(
+        res,
+        review,
+        200,
+      );
+    } catch (err) {
+      const error = err as Error;
+
+      if (err instanceof Error && 'code' in err && (err as any).code === 11000) {
+        logger.error(messages.EXISTING_REVIEW_LYRIC);
+        return sendError(res, createHttpError(409, messages.EXISTING_REVIEW_LYRIC));
+      }
+
+      logger.error(error.message);
+      return sendError(res, createHttpError(403, error));
+    }
+  }),
+
   deleteReview: asyncWrapper(async (req: Request, res: Response) => {
     try {
       const reviewId = req.params.reviewId as string;
@@ -193,7 +217,7 @@ const adminController = {
 
       return sendResponse(
         res,
-        deletedReview,
+        "Delete Successful",
         200,
       );
     } catch (err) {
